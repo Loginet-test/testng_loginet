@@ -4,7 +4,7 @@ package com.mycompany.app;
  * Created by supfe_000 on 08.08.2015.
  */
 public class ShippingRequestValueContainerCola {
-    private String file_path = "C:\\testReq\\ColaAuto.xls";
+    private String file_path = "ColaAuto.xls";
     private String sto;                   //   B
     private String dateLoad;              //   D
     private String timeLoad;              //   E
