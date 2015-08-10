@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class ParserShippingRequestCola {
-    public static int start = 2;                     //   line to start
+    public static int start = 2;                     //   line to sta
     public static int clmnsto = 1;                   //   B
     public static int clmndateLoad = 3;              //   D
     public static int clmntimeLoad = 4;              //   E
