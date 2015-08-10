@@ -1,0 +1,1842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="ext-gen3" class=" x-theme-blue  ext-strict"><head id="Head1">
+	<link href="/extjs/resources/css/ext-all-embedded-css/ext.axd?v=21945" type="text/css" rel="stylesheet" />
+
+	<link href="/ux/extensions/portal/css/portal-embedded-css/ext.axd?v=21945" type="text/css" rel="stylesheet" />
+
+	<link href="/ux/plugins/tabscrollermenu/css/tab-scroller-menu-embedded-css/ext.axd?v=21945" type="text/css" rel="stylesheet" />
+	<style type="text/css">
+		.x-form-field-wrap .x-form-simpleplus-trigger{background-image:url(/ux/extensions/triggerfield/images/simple-plus-gif/ext.axd);cursor:pointer;} .x-small-editor .x-form-field-wrap .x-form-simpleplus-trigger{background-image:url(/ux/extensions/triggerfield/images/simple-plus-small-gif/ext.axd);cursor:pointer;}
+	</style>
+<title>
+
+</title><link type="text/css" rel="stylesheet" href="/Styles/jqueryui.css" /><meta content="IE=9" http-equiv="X-UA-Compatible" /><meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><link type="image/x-icon" href="/favicon.ico" rel="icon" />
+       <link rel="stylesheet" href="/Styles/ext_customize.css" />
+<link rel="stylesheet" href="/Styles/styles.css" />
+
+  
+      
+
+
+	<!--[if lte IE 7]><link rel="stylesheet" href="/Styles/ie.css" type="text/css" /><![endif]-->
+
+  <script type="text/javascript" src="/Scripts/jquery/jquery-1.5.1.min.js"></script>
+  <script type="text/javascript" src="/scripts/jquery/jquery-ui-1.8.6.custom.min.js"></script>
+  <script type="text/javascript" src="/scripts/jquery/jquery.ui.datepicker-ru.js"></script>
+  <script src="/scripts/Common.js" type="text/javascript"></script>
+ 
+	<script type="text/javascript">
+	    $isNotIframe = false;
+	    var CDReset = function () { }	    
+	</script>
+
+
+    
+
+  
+    
+
+
+
+<style>
+    .ext-el-mask {
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -moz-opacity: 0.05;
+        opacity: .05;
+        filter: alpha(opacity=5);
+        width: 100%;
+        height: 100%;
+        zoom: 1;
+    }
+</style> 
+
+
+
+	<script src="/extjs/adapter/ext/ext-base-js/ext.axd?v=21945" type="text/javascript"></script>
+	<script src="/extjs/ext-all-js/ext.axd?v=21945" type="text/javascript"></script>
+	<script src="/extnet/extnet-core-js/ext.axd?v=21945" type="text/javascript"></script>
+	<script src="/extnet/locale/ext-lang-ru-js/ext.axd?v=21945" type="text/javascript"></script>
+	<script src="/extnet/extnet-data-js/ext.axd?v=21945" type="text/javascript"></script>
+	<script src="/ux/extensions/portal/portal-js/ext.axd?v=21945" type="text/javascript"></script>
+	<script src="/ux/plugins/tabscrollermenu/TabScrollerMenu-js/ext.axd?v=21945" type="text/javascript"></script>
+	<script type="text/javascript">
+	//&lt;![CDATA[
+		Ext.net.ResourceMgr.init({id:"ctl00$ctl00$ctl06",BLANK_IMAGE_URL:"/extjs/resources/images/default/s-gif/ext.axd",aspForm:"form1",theme:"blue",icons:["Accept","Vcard"]});Ext.onReady(function(){Ext.QuickTips.init();Ext.net.DirectEvent.showFailure = Ext.emptyFn;Ext.apply(Ext.net.DirectMethods, { GetPageRegirectClientScript:function(page,parameter,config){Ext.net.DirectMethod.request("GetPageRegirectClientScript",Ext.applyIf(config || {}, {params:{page:page,parameter:parameter},specifier:"static"}));},GetPageRegirectClientScript2:function(page,parameter,config){Ext.net.DirectMethod.request("GetPageRegirectClientScript2",Ext.applyIf(config || {}, {params:{page:page,parameter:parameter},specifier:"static"}));},CheckLogin:function(config){Ext.net.DirectMethod.request("CheckLogin",Ext.applyIf(config || {}, {specifier:"static"}));},Dragged:function(portal,columnIndex,position,id,config){Ext.net.DirectMethod.request("Dragged",Ext.applyIf(config || {}, {params:{portal:portal,columnIndex:columnIndex,position:position,id:id}}));},Resize:function(portal,col1,col2,col3,col4,portalInd,config){Ext.net.DirectMethod.request("Resize",Ext.applyIf(config || {}, {params:{portal:portal,col1:col1,col2:col2,col3:col3,col4:col4,portalInd:portalInd}}));},ClosePortlet:function(id,config){Ext.net.DirectMethod.request("ClosePortlet",Ext.applyIf(config || {}, {params:{id:id}}));},ChangeSize:function(id,config){Ext.net.DirectMethod.request("ChangeSize",Ext.applyIf(config || {}, {params:{id:id}}));},AddNewPotrlet:function(config){Ext.net.DirectMethod.request("AddNewPotrlet",Ext.applyIf(config || {}, {}));},RunControlDirectMethod:function(methodName,pars,config){Ext.net.DirectMethod.request("RunControlDirectMethod",Ext.applyIf(config || {}, {params:{methodName:methodName,pars:pars}}));},GetPageRegirectClientScript1:function(page,parameter,config){Ext.net.DirectMethod.request("GetPageRegirectClientScript1",Ext.applyIf(config || {}, {params:{page:page,parameter:parameter}}));},ctl00:{Prolong:function(config){Ext.net.DirectMethod.request("Prolong",Ext.applyIf(config || {}, {control:"ctl00"}));}},BaseMainContent_HeaderControl1:{ChangeTextOnAlertButton:function(config){Ext.net.DirectMethod.request("ChangeTextOnAlertButton",Ext.applyIf(config || {}, {control:"BaseMainContent_HeaderControl1"}));},CheckNewAlerts:function(config){Ext.net.DirectMethod.request("CheckNewAlerts",Ext.applyIf(config || {}, {control:"BaseMainContent_HeaderControl1"}));}},BaseMainContent_AlertPanel1:{ReloadAlertsOnMasterPage:function(config){Ext.net.DirectMethod.request("ReloadAlertsOnMasterPage",Ext.applyIf(config || {}, {control:"BaseMainContent_AlertPanel1"}));}},BaseMainContent_MainContent_DashboardSettingsUc:{CancelBtnHandler:function(config){Ext.net.DirectMethod.request("CancelBtnHandler",Ext.applyIf(config || {}, {control:"BaseMainContent_MainContent_DashboardSettingsUc"}));},InitDashboard:function(json,title,config){Ext.net.DirectMethod.request("InitDashboard",Ext.applyIf(config || {}, {params:{json:json,title:title},control:"BaseMainContent_MainContent_DashboardSettingsUc"}));},showWindowHandler:function(config){Ext.net.DirectMethod.request("showWindowHandler",Ext.applyIf(config || {}, {control:"BaseMainContent_MainContent_DashboardSettingsUc"}));},SaveSettings:function(config){Ext.net.DirectMethod.request("SaveSettings",Ext.applyIf(config || {}, {control:"BaseMainContent_MainContent_DashboardSettingsUc"}));}},BaseMainContent_AddressWindowContent:{GetCoordinates:function(config){Ext.net.DirectMethod.request("GetCoordinates",Ext.applyIf(config || {}, {control:"BaseMainContent_AddressWindowContent"}));},GetGoogleMapLinkByCoordinates:function(config){Ext.net.DirectMethod.request("GetGoogleMapLinkByCoordinates",Ext.applyIf(config || {}, {control:"BaseMainContent_AddressWindowContent"}));},CancelBtnHandler:function(config){Ext.net.DirectMethod.request("CancelBtnHandler",Ext.applyIf(config || {}, {control:"BaseMainContent_AddressWindowContent"}));},InitAddress:function(json,title,config){Ext.net.DirectMethod.request("InitAddress",Ext.applyIf(config || {}, {params:{json:json,title:title},control:"BaseMainContent_AddressWindowContent"}));},GetSelectedAddressString:function(country,regionId,districtId,city,lang,config){Ext.net.DirectMethod.request("GetSelectedAddressString",Ext.applyIf(config || {}, {params:{country:country,regionId:regionId,districtId:districtId,city:city,lang:lang},control:"BaseMainContent_AddressWindowContent"}));}} });Ext.net.DirectEvent.on({ajaxrequestexception:{fn:handleError}});this.BaseMainContent_MainContent_store2Load=new Ext.ux.data.PagingStore({proxyId:"BaseMainContent_MainContent_store2Load",autoLoad:true,reader:new Ext.data.ArrayReader({fields:[{name:"ptype"},{name:"pdesc"}]}),directEventConfig:{},proxy:new Ext.data.PagingMemoryProxy([[273,"Список приглашений к участию"],[289,"Список открытых тендеров (виджет)"]], false)});new Ext.Panel({id:"BaseMainContent_Window1",renderTo:"BaseMainContent_Window1_Container",autoWidth:true,items:[{id:"BaseMainContent_pnlNorth",contentEl:"BaseMainContent_pnlNorth_Content",region:"north",autoWidth:true},{id:"BaseMainContent_pnlSettings",region:"west",collapsible:true,maxWidth:172,minWidth:172,split:true,cls:"lMenuPanel",style:"padding-right:0;",autoHeight:true,items:[{id:"BaseMainContent_Panel2",contentEl:"BaseMainContent_Panel2_Content",style:"margin:0px;",border:false},{id:"BaseMainContent_Panel5",contentEl:"BaseMainContent_Panel5_Content",margins:"0"}],layout:"auto",animCollapse:false,border:false,header:false,listeners:{collapse:{fn:function(item){setTabPanelSize();}}}},{id:"BaseMainContent_CenterCoverPanel",region:"center",autoHeight:true,autoWidth:true,items:[{id:"BaseMainContent_Panel1",plain:true,contentEl:"BaseMainContent_Panel1_Content",autoHeight:true,baseCls:"specalertclass",bodyStyle:"margin-bottom: 0px;",border:false},{id:"BaseMainContent_MainTabPanel",xtype:"tabpanel",labelAlign:"right",plugins:this.BaseMainContent_TabScrollerMenu1=new Ext.ux.TabScrollerMenu({menuPrefixText:"newtab"}),items:{id:"BaseMainContent_firstTabPanel",contentEl:"BaseMainContent_firstTabPanel_Content",autoHeight:true,title:"Избранное"},bodyCssClass:"favCont1",activeTab:0,enableTabScroll:true,plain:true,listeners:{resize:{fn:function(item,adjWidth,adjHeight,rawWidth,rawHeight){setTabPanelSize();}},tabchange:{fn:function(item,tab,index){setChangedTab();CheckLogin();}}}}],layout:"auto",bodyStyle:"background-color: transparent;",border:false}],layout:"border",bodyStyle:"background-color: transparent;",border:false});new Ext.net.LinkButton({id:"BaseMainContent_HeaderControl1_ctl00",renderTo:"BaseMainContent_HeaderControl1_ctl00_Container",menu:{id:"BaseMainContent_HeaderControl1_Menu1",xtype:"menu",items:{id:"BaseMainContent_HeaderControl1_ComponentMenuItem1",xtype:"componentmenuitem",component:{id:"BaseMainContent_HeaderControl1_Panel1",xtype:"panel",contentEl:"BaseMainContent_HeaderControl1_Panel1_Content",height:150,width:200,title:"Логин"},shift:false},listeners:{beforeshow:{fn:function(item){CheckLogin();}}}},text:"Профиль"});new Ext.net.LinkButton({id:"BaseMainContent_HeaderControl1_lnkbtnalerts",renderTo:"BaseMainContent_HeaderControl1_lnkbtnalerts_Container",menu:{id:"BaseMainContent_HeaderControl1_menualerts",xtype:"menu",width:300,items:[{id:"BaseMainContent_HeaderControl1_ctl09",style:"white-space: normal;",text:"Вы можете подвести итоги тендера Новый тендер.",listeners:{click:{fn:function(item,e){hideAllAlertsInHeader(); Redirect2Page('AlertsPage','c09e9bb8-f94a-4d4b-be0b-259266329ce5');}}}},{id:"BaseMainContent_HeaderControl1_ctl11",xtype:"menuseparator"},{id:"BaseMainContent_HeaderControl1_ctl13",style:"font-weight: bold;",text:"Просмотреть все уведомления",listeners:{click:{fn:function(item,e){hideAllAlertsInHeader();Redirect2Page('AlertsPage');}}}}],offsetX:-128,offsetY:25,defaultOffsets:[-128,25],showSeparator:false},text:"Уведомления"});new Ext.form.Label({id:"BaseMainContent_HeaderControl1_lblalcnt",labelStyle:"color:#000;",cls:"ii",ctCls:"ii",renderTo:"BaseMainContent_HeaderControl1_lblalcnt_Container",text:"1",listeners:{afterrender:{fn:function(item){if(BaseMainContent_HeaderControl1_lblalcnt.hidden) hideAlertsInHeader(); }}}});new Ext.net.LinkButton({id:"BaseMainContent_HeaderControl1_LinkButton2",renderTo:"BaseMainContent_HeaderControl1_LinkButton2_Container",text:"Помощь."});new Ext.Panel({id:"BaseMainContent_Panel6",renderTo:"BaseMainContent_Panel6_Container",items:[{id:"BaseMainContent_Panel7",contentEl:"BaseMainContent_Panel7_Content",style:"margin:0px;",border:false},{id:"BaseMainContent_Panel8",contentEl:"BaseMainContent_Panel8_Content",anchor:"Bottom",style:"margin:0px;",autoHeight:true,border:false}],layout:"auto"});new Ext.Panel({id:"BaseMainContent_AlertPanel1_wzrdpnl1",renderTo:"BaseMainContent_AlertPanel1_wzrdpnl1_Container",items:[{id:"BaseMainContent_AlertPanel1_pnlcnt",xtype:"panel",html:"&lt;span&gt;УВЕДОМЛЕНИЯ&lt;/span&gt; &lt;i&gt;&lt;i&gt; Новых 1&lt;/i&gt;&lt;/i&gt;",cls:"title",bodyStyle:"background-color: transparent;",border:false},{id:"BaseMainContent_AlertPanel1_WizardPanel",xtype:"panel",autoHeight:true,boxMinHeight:18,activeItem:0,items:{id:"BaseMainContent_AlertPanel1_ctl09",html:"&lt;a style=\"text-decoration:none;color:#000;font-style: italic;\" href=\"#\" onclick=\"hideAllAlertsInHeader(); Redirect2Page('AlertsPage','c09e9bb8-f94a-4d4b-be0b-259266329ce5');\"&gt; Вы можете подвести итоги тендера Новый тендер.&lt;/a&gt;",autoHeight:true,boxMinHeight:70,baseCls:"specalertscls",border:false,header:false},layout:"card",baseCls:"specalertclass",bodyStyle:"background-color: transparent;margin-bottom: 0px;",border:false,buttons:[{id:"BaseMainContent_AlertPanel1_btnPrev",xtype:"netimagebutton",cls:"previous",disabled:true,directEvents:{click:{fn:function(item,e){var params=arguments;Ext.net.DirectEvent.confirmRequest({extraParams:{"index":BaseMainContent_AlertPanel1_WizardPanel.items.indexOf(BaseMainContent_AlertPanel1_WizardPanel.layout.activeItem)},control:this});},delay:20}},imageUrl:"/images/notice_prev.gif"},{id:"BaseMainContent_AlertPanel1_btnNext",xtype:"netimagebutton",cls:"next",directEvents:{click:{fn:function(item,e){var params=arguments;Ext.net.DirectEvent.confirmRequest({extraParams:{"index":BaseMainContent_AlertPanel1_WizardPanel.items.indexOf(BaseMainContent_AlertPanel1_WizardPanel.layout.activeItem)},control:this});},delay:20}},imageUrl:"/images/notice_next.gif"},{id:"BaseMainContent_AlertPanel1_ctl05",xtype:"netimagebutton",cls:"close",listeners:{click:{fn:function(item,e){hideAlertsOnMasterPage();}}},imageUrl:"/images/icon_cross.gif"}]}],layout:"table",layoutConfig:{columns:2},bodyCssClass:"noticeAlert",bodyStyle:"margin-top: 10px;",border:false,listeners:{afterrender:{fn:function(item){setTimeout(setTabPanelSize, 500)}}}});new Ext.Panel({id:"BaseMainContent_MainContent_pnlSettings",contentEl:"BaseMainContent_MainContent_pnlSettings_Content",renderTo:"BaseMainContent_MainContent_pnlSettings_Container",border:false,title:"Избранное"});new Ext.form.ComboBox({id:"BaseMainContent_MainContent_cbWP2Add",ctCls:"favSelect",renderTo:"BaseMainContent_MainContent_cbWP2Add_Container",width:350,emptyText:"Выберите страницу...",selectOnFocus:true,triggersConfig:[{iconCls:"x-form-simpleplus-trigger",qtip:"Добавить"}],editable:false,displayField:"pdesc",forceSelection:false,hiddenName:"BaseMainContent_MainContent_cbWP2Add_Value",itemSelector:"div.list-item",listClass:"favComboList",mode:"local",queryDelay:10,tpl:this.BaseMainContent_MainContent_Template1=new Ext.net.XTemplate({proxyId:"BaseMainContent_MainContent_Template1",html:["&lt;tpl for=\".\"&gt;","&lt;div class=\"list-item\"&gt;","{pdesc}","&lt;/div&gt;","&lt;/tpl&gt;",""]}),triggerAction:"all",valueField:"ptype",store:BaseMainContent_MainContent_store2Load,submitValue:true,directEvents:{triggerclick:{fn:function(item,trigger,index,tag,e){var params=arguments;Ext.net.DirectEvent.confirmRequest({eventMask:{showMask:true},before:function(el,type,action,extraParams,o){return this.getValue() != '';},userSuccess:function(response,result,el,type,action,extraParams,o){BaseMainContent_MainContent_store2Load.reload();},control:this,action:'TriggerClick'});},delay:20}}});new Ext.Button({id:"BaseMainContent_MainContent_btnHidden",hidden:true,renderTo:"BaseMainContent_MainContent_btnHidden_Container",directEvents:{click:{fn:function(item,e){var params=arguments;Ext.net.DirectEvent.confirmRequest({extraParams:{"Num":item},userSuccess:function(response,result,el,type,action,extraParams,o){BaseMainContent_MainContent_store2Load.reload();},control:this});},delay:20}}});new Ext.Button({id:"BaseMainContent_MainContent_DashboardSettingsUc_btnChoose",cls:"panelCust",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_btnChoose_Container",text:"Настройки панели",listeners:{click:{fn:BaseMainContent_MainContent_DashboardSettingsUc_PopupWndDashboard_showWindowHandler}}});new Ext.Window({id:"BaseMainContent_MainContent_DashboardSettingsUc_PopupWndDashboard",hidden:true,renderTo:Ext.get("form1"),height:100,width:602,items:{id:"BaseMainContent_MainContent_DashboardSettingsUc_Dashboardpnl",xtype:"form",contentEl:"BaseMainContent_MainContent_DashboardSettingsUc_Dashboardpnl_Content",labelWidth:110,clearCls:"xxxx",ctCls:"prbWithMargin dashContainer",border:false,buttons:[{id:"BaseMainContent_MainContent_DashboardSettingsUc_SubmitBtn",iconCls:"icon-accept",text:"Сохранить",listeners:{click:{fn:function(item,e){
+                                if( BaseMainContent_MainContent_DashboardSettingsUc_Dashboardpnl.getForm().isValid() ){  BaseMainContent_MainContent_DashboardSettingsUc_PopupWndDashboard_closeWnd(); }   else  return false;}}}},{id:"BaseMainContent_MainContent_DashboardSettingsUc_CancelBtn",text:"Отменить",listeners:{click:{fn:BaseMainContent_MainContent_DashboardSettingsUc_PopupWndDashboard_cancelBtnHandler}}}],renderFormElement:false,url:"/Secure/Favorites.aspx?sh=-9006"},layout:"auto",collapsible:true,title:"Настройки панели",modal:true});new Ext.form.Checkbox({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_PanelVisChk",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_PanelVisChk_Container",boxLabel:"Панель",boxLabelCls:"dashLabel",inputValue:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_PanelVisChk"});new Ext.ToolTip({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ToolTip2",html:"Показывать на панели.",target:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_PanelVisChk"});new Ext.form.ComboBox({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ColumnCount",fieldLabel:"Количество колонок",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ColumnCount_Container",width:184,displayField:"text",hiddenName:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ColumnCount_Value",mode:"local",queryDelay:10,triggerAction:"all",valueField:"value",store:new Ext.data.SimpleStore({fields:["text","value"],data :[["1","1"],["2","2"],["3","3"],["4","4"]]}),submitValue:true,initSelectedIndex:0});new Ext.ToolTip({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ToolTip3",html:"Выберите количество колонок на панели.",target:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ColumnCount"});new Ext.form.Hidden({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_pnlIndx",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_pnlIndx_Container"});new Ext.form.TextField({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_txtPanelTitle",clearCls:"clear",ctCls:"dashName",fieldLabel:"Имя панели",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_txtPanelTitle_Container",width:263});new Ext.ToolTip({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ToolTip1",html:"Введите заголовок панели.",target:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_txtPanelTitle"});new Ext.form.Checkbox({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_PanelVisChk",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_PanelVisChk_Container",boxLabel:"Панель",boxLabelCls:"dashLabel",inputValue:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_PanelVisChk"});new Ext.ToolTip({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ToolTip2",html:"Показывать на панели.",target:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_PanelVisChk"});new Ext.form.ComboBox({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ColumnCount",fieldLabel:"Количество колонок",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ColumnCount_Container",width:184,displayField:"text",hiddenName:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ColumnCount_Value",mode:"local",queryDelay:10,triggerAction:"all",valueField:"value",store:new Ext.data.SimpleStore({fields:["text","value"],data :[["1","1"],["2","2"],["3","3"],["4","4"]]}),submitValue:true,initSelectedIndex:0});new Ext.ToolTip({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ToolTip3",html:"Выберите количество колонок на панели.",target:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ColumnCount"});new Ext.form.Hidden({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_pnlIndx",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_pnlIndx_Container"});new Ext.form.TextField({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_txtPanelTitle",clearCls:"clear",ctCls:"dashName",fieldLabel:"Имя панели",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_txtPanelTitle_Container",width:263});new Ext.ToolTip({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ToolTip1",html:"Введите заголовок панели.",target:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_txtPanelTitle"});new Ext.form.Checkbox({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_PanelVisChk",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_PanelVisChk_Container",boxLabel:"Панель",boxLabelCls:"dashLabel",inputValue:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_PanelVisChk"});new Ext.ToolTip({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ToolTip2",html:"Показывать на панели.",target:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_PanelVisChk"});new Ext.form.ComboBox({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ColumnCount",fieldLabel:"Количество колонок",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ColumnCount_Container",width:184,displayField:"text",hiddenName:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ColumnCount_Value",mode:"local",queryDelay:10,triggerAction:"all",valueField:"value",store:new Ext.data.SimpleStore({fields:["text","value"],data :[["1","1"],["2","2"],["3","3"],["4","4"]]}),submitValue:true,initSelectedIndex:0});new Ext.ToolTip({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ToolTip3",html:"Выберите количество колонок на панели.",target:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ColumnCount"});new Ext.form.Hidden({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_pnlIndx",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_pnlIndx_Container"});new Ext.form.TextField({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_txtPanelTitle",clearCls:"clear",ctCls:"dashName",fieldLabel:"Имя панели",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_txtPanelTitle_Container",width:263});new Ext.ToolTip({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ToolTip1",html:"Введите заголовок панели.",target:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_txtPanelTitle"});new Ext.form.Checkbox({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_PanelVisChk",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_PanelVisChk_Container",boxLabel:"Панель",boxLabelCls:"dashLabel",inputValue:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_PanelVisChk"});new Ext.ToolTip({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ToolTip2",html:"Показывать на панели.",target:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_PanelVisChk"});new Ext.form.ComboBox({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ColumnCount",fieldLabel:"Количество колонок",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ColumnCount_Container",width:184,displayField:"text",hiddenName:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ColumnCount_Value",mode:"local",queryDelay:10,triggerAction:"all",valueField:"value",store:new Ext.data.SimpleStore({fields:["text","value"],data :[["1","1"],["2","2"],["3","3"],["4","4"]]}),submitValue:true,initSelectedIndex:0});new Ext.ToolTip({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ToolTip3",html:"Выберите количество колонок на панели.",target:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ColumnCount"});new Ext.form.Hidden({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_pnlIndx",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_pnlIndx_Container"});new Ext.form.TextField({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_txtPanelTitle",clearCls:"clear",ctCls:"dashName",fieldLabel:"Имя панели",renderTo:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_txtPanelTitle_Container",width:263});new Ext.ToolTip({id:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ToolTip1",html:"Введите заголовок панели.",target:"BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_txtPanelTitle"});new Ext.Panel({id:"BaseMainContent_MainContent_PanelforRender",renderTo:"BaseMainContent_MainContent_PanelforRender_Container",items:{id:"BaseMainContent_MainContent_PanelWithPortlets",items:{id:"BaseMainContent_MainContent_DashboardPortal0",xtype:"portal",height:200,items:[{id:"BaseMainContent_MainContent_DashboardPortal0Column0",xtype:"portalcolumn",columnWidth:0.01,flex:1,style:"padding:10px"},{id:"BaseMainContent_MainContent_DashboardPortal0Column1",xtype:"portalcolumn",columnWidth:0.98,flex:1,style:"padding:10px"}],layout:"netcolumn",bodyStyle:"background-color: transparent;",title:"Тендеры",listeners:{drop:{fn:function(e) { setPortalHeight(); Ext.net.DirectMethods.Dragged(e.portal.id, e.columnIndex, e.position,e.panel.id ); }}}},layout:"fit",bodyStyle:"background-color: transparent;",border:false,iconCls:"icon-vcard",listeners:{afterlayout:{fn:function(item,layout){setPortalHeight();}}}},layout:"auto",border:false});this.BaseMainContent_MainContent_Resizable0Column0=new Ext.Resizable(BaseMainContent_MainContent_DashboardPortal0Column0.el,{id:"BaseMainContent_MainContent_Resizable0Column0",transparent:true,listeners:{resize:{fn:function(e) { setWidth(BaseMainContent_MainContent_DashboardPortal0, BaseMainContent_MainContent_DashboardPortal0Column0,0);}}}});this.BaseMainContent_MainContent_Resizable0Column1=new Ext.Resizable(BaseMainContent_MainContent_DashboardPortal0Column1.el,{id:"BaseMainContent_MainContent_Resizable0Column1",transparent:true,listeners:{resize:{fn:function(e) { setWidth(BaseMainContent_MainContent_DashboardPortal0, BaseMainContent_MainContent_DashboardPortal0Column1,0);}}}});new Ext.Window({id:"BaseMainContent_AddressWindowContent_PopupWndAddress",hidden:true,renderTo:Ext.get("form1"),height:430,width:555,items:{id:"BaseMainContent_AddressWindowContent_AddressFpnl",xtype:"form",labelWidth:110,clearCls:"xxxx",ctCls:"profFooter narProfButton prbWithMargin",items:[{id:"BaseMainContent_AddressWindowContent_UIDHdn",xtype:"hidden"},{id:"BaseMainContent_AddressWindowContent_AddressIdHdn",xtype:"hidden"},{id:"BaseMainContent_AddressWindowContent_ctl02",xtype:"compositefield",fieldLabel:"Страна &lt;span style='color:red;'&gt;*&lt;/span&gt;",items:new Ext.form.ComboBox({id:"BaseMainContent_AddressWindowContent_CountryCmb",xtype:"combo",ctCls:"windowSelect",width:330,msgTarget:"side",allowBlank:false,emptyText:"Выберите страну",displayField:"Item2",hiddenName:"BaseMainContent_AddressWindowContent_CountryCmb_Value",loadingText:"Ждите...",minChars:1,mode:"local",triggerAction:"all",valueField:"Item1",store:this.BaseMainContent_AddressWindowContent_CountryCmbStore=new Ext.net.Store({proxyId:"BaseMainContent_AddressWindowContent_CountryCmbStore",autoLoad:true,proxy:new Ext.data.HttpProxy({method:"POST",url:"../GeoPointService.svc/EnumGeoCountries",json:true}),reader:new Ext.data.JsonReader({fields:[{name:"Item1"},{name:"Item2"}],idProperty:"Item1",root:"data"}),directEventConfig:{},beforeLoadParams:function(store,options){if (!options.params){options.params = {};};Ext.apply(options.params,{"filter":''});Ext.applyIf(options.params,{});}}),submitValue:true,listeners:{keyup:{fn:function(item,e){if(e.target.value == '') {BaseMainContent_AddressWindowContent_CountryCmb.clearValue(); clearCombos(4);}}},select:{fn:BaseMainContent_AddressWindowContent_PopupWndAddress_countryCmbHandler}}})},{id:"BaseMainContent_AddressWindowContent_ctl06",xtype:"compositefield",fieldLabel:"Регион",items:new Ext.form.ComboBox({id:"BaseMainContent_AddressWindowContent_RegionCmb",xtype:"combo",ctCls:"windowSelect",width:330,emptyText:"Выберите регион",displayField:"Item2",hiddenName:"BaseMainContent_AddressWindowContent_RegionCmb_Value",minChars:1,mode:"local",triggerAction:"all",typeAhead:true,valueField:"Item1",store:this.BaseMainContent_AddressWindowContent_RegionCmbStore=new Ext.net.Store({proxyId:"BaseMainContent_AddressWindowContent_RegionCmbStore",autoLoad:true,proxy:new Ext.data.HttpProxy({method:"POST",url:"../GeoPointService.svc/EnumGeoRegions",json:true}),reader:new Ext.data.JsonReader({fields:[{name:"Item1"},{name:"Item2"}],idProperty:"Item1",root:"data"}),directEventConfig:{},beforeLoadParams:function(store,options){if (!options.params){options.params = {};};Ext.apply(options.params,{"country":BaseMainContent_AddressWindowContent_CountryCmb.getValue(),"lang":BaseMainContent_AddressWindowContent_CountryCmb.getText()});Ext.applyIf(options.params,{});}}),submitValue:true,listeners:{focus:{fn:function(item){if(this.getStore().data.length == 0)BaseMainContent_AddressWindowContent_PopupWndAddress_countryCmbHandler();}},keyup:{fn:function(item,e){if(e.target.value == '') {BaseMainContent_AddressWindowContent_RegionCmb.clearValue(); clearCombos(3);  reloadCombo(BaseMainContent_AddressWindowContent_DistrictCmb);}}},select:{fn:BaseMainContent_AddressWindowContent_PopupWndAddress_regionCmbHandler}}})},{id:"BaseMainContent_AddressWindowContent_ctl10",xtype:"compositefield",fieldLabel:"Район",items:new Ext.form.ComboBox({id:"BaseMainContent_AddressWindowContent_DistrictCmb",xtype:"combo",ctCls:"windowSelect",width:330,emptyText:"Выберите район",selectOnFocus:true,displayField:"Item2",hiddenName:"BaseMainContent_AddressWindowContent_DistrictCmb_Value",minChars:1,mode:"local",selectOnFocus:true,triggerAction:"all",typeAhead:true,valueField:"Item1",store:this.BaseMainContent_AddressWindowContent_DistrictCmbStore=new Ext.net.Store({proxyId:"BaseMainContent_AddressWindowContent_DistrictCmbStore",proxy:new Ext.data.HttpProxy({method:"POST",url:"../GeoPointService.svc/EnumGeoDistricts",json:true}),reader:new Ext.data.JsonReader({fields:[{name:"Item1"},{name:"Item2"}],idProperty:"Item1",root:"data"}),directEventConfig:{},beforeLoadParams:function(store,options){if (!options.params){options.params = {};};Ext.apply(options.params,{"country":BaseMainContent_AddressWindowContent_CountryCmb.getValue(),"regionId":BaseMainContent_AddressWindowContent_RegionCmb.getValue(),"lang":BaseMainContent_AddressWindowContent_CountryCmb.getText()});Ext.applyIf(options.params,{});}}),submitValue:true,listeners:{keyup:{fn:function(item,e){if(e.target.value == '') { BaseMainContent_AddressWindowContent_DistrictCmb.clearValue(); clearCombos(2);}}},select:{fn:BaseMainContent_AddressWindowContent_PopupWndAddress_districtCmbHandler}}})},{id:"BaseMainContent_AddressWindowContent_ctl14",xtype:"compositefield",fieldLabel:"Нас. пункт &lt;span style='color:red;'&gt;*&lt;/span&gt;",items:new Ext.form.ComboBox({id:"BaseMainContent_AddressWindowContent_CityCmb",xtype:"combo",ctCls:"windowSelect noTrigger",width:330,msgTarget:"side",allowBlank:false,emptyText:"Введите населенный пункт",hideTrigger:true,displayField:"Item2",forceSelection:false,hiddenName:"BaseMainContent_AddressWindowContent_CityCmb_Value",itemSelector:"div.search-item",loadingText:"Ждите...",minChars:1,queryDelay:1000,tpl:this.BaseMainContent_AddressWindowContent_Template1=new Ext.net.XTemplate({proxyId:"BaseMainContent_AddressWindowContent_Template1",html:["&lt;tpl for=\".\"&gt;","&lt;div class=\"search-item\"&gt;","&lt;span&gt;{Item3}&lt;/span&gt;","&lt;/div&gt;","&lt;/tpl&gt;",""]}),valueField:"Item1",store:this.BaseMainContent_AddressWindowContent_CityCmbStore=new Ext.net.Store({proxyId:"BaseMainContent_AddressWindowContent_CityCmbStore",proxy:new Ext.data.HttpProxy({method:"POST",url:"../GeoPointService.svc/EnumGeoCities",json:true}),reader:new Ext.data.JsonReader({fields:[{name:"Item1"},{name:"Item2"},{name:"Item3"}],idProperty:"Item1",root:"data"}),directEventConfig:{},beforeLoadParams:function(store,options){if (!options.params){options.params = {};};Ext.apply(options.params,{"filter":BaseMainContent_AddressWindowContent_CityCmb.getText(),"country":BaseMainContent_AddressWindowContent_CountryCmb.getValue(),"regionId":BaseMainContent_AddressWindowContent_RegionCmb.getValue(),"districtId":BaseMainContent_AddressWindowContent_DistrictCmb.getValue(),"lang":BaseMainContent_AddressWindowContent_CountryCmb.getText()});Ext.applyIf(options.params,{});}}),submitValue:true,listeners:{change:{fn:BaseMainContent_AddressWindowContent_PopupWndAddress_setEnableBtn},select:{fn:BaseMainContent_AddressWindowContent_PopupWndAddress_cityCmbHandler}}})},{id:"BaseMainContent_AddressWindowContent_ctl18",xtype:"compositefield",fieldLabel:"Улица",items:new Ext.form.TextField({id:"BaseMainContent_AddressWindowContent_StreetTxt",xtype:"textfield",width:330,msgTarget:"side"})},{id:"BaseMainContent_AddressWindowContent_ctl22",xtype:"compositefield",fieldLabel:"Дом",items:new Ext.form.TextField({id:"BaseMainContent_AddressWindowContent_BlockTxt",xtype:"textfield",width:330,msgTarget:"side"})},{id:"BaseMainContent_AddressWindowContent_ctl26",xtype:"compositefield",fieldLabel:"Строение",items:new Ext.form.TextField({id:"BaseMainContent_AddressWindowContent_BuildingTxt",xtype:"textfield",width:330})},{id:"BaseMainContent_AddressWindowContent_ctl34",xtype:"compositefield",fieldLabel:"Доп. информация",items:new Ext.form.TextArea({id:"BaseMainContent_AddressWindowContent_AdditionalInfoTxt",xtype:"textarea",width:330})}],border:false,buttons:[{id:"BaseMainContent_AddressWindowContent_SubmitBtn",text:"Сохранить",listeners:{click:{fn:function(item,e){
+                                if( BaseMainContent_AddressWindowContent_AddressFpnl.getForm().isValid() ){  BaseMainContent_AddressWindowContent_PopupWndAddress_closeWnd(); }   else  return false;}}}},{id:"BaseMainContent_AddressWindowContent_CancelBtn",text:"Отменить",listeners:{click:{fn:BaseMainContent_AddressWindowContent_PopupWndAddress_cancelBtnHandler}}}],renderFormElement:false,url:"/Secure/Favorites.aspx?sh=-9006"},layout:"auto",collapsible:true,modal:true,listeners:{beforehide:{fn:function(item){BaseMainContent_AddressWindowContent_RegionCmb.clear();BaseMainContent_AddressWindowContent_DistrictCmb.clear();BaseMainContent_AddressWindowContent_CityCmb.clear(); BaseMainContent_AddressWindowContent_CountryCmb.clear(); BaseMainContent_AddressWindowContent_CityCmb.clearInvalid(); BaseMainContent_AddressWindowContent_CountryCmb.clearInvalid(); }},show:{fn:function(item){setTimeout(function(){BaseMainContent_AddressWindowContent_CityCmb.focus(true);}, 500);}}}});new Ext.ToolTip({id:"BaseMainContent_AddressWindowContent_ToolTip1",html:"Введите название страны. ",target:"BaseMainContent_AddressWindowContent_CountryCmb"});new Ext.ToolTip({id:"BaseMainContent_AddressWindowContent_ToolTip2",html:"Для выбора региона заполните поле 'Страна*'. Введите название региона.",target:"BaseMainContent_AddressWindowContent_RegionCmb"});new Ext.ToolTip({id:"BaseMainContent_AddressWindowContent_ToolTip3",html:"Для выбора района заполните поля 'Страна*'(обязательное) и 'Регион'(необязательное). Введите название района.",target:"BaseMainContent_AddressWindowContent_DistrictCmb"});new Ext.ToolTip({id:"BaseMainContent_AddressWindowContent_ToolTip4",html:"Введите первые буквы названия. Обязательно должно быть заполнено поле 'Страна*'. Выберите из списка населенный пункт.",target:"BaseMainContent_AddressWindowContent_CityCmb"});new Ext.ToolTip({id:"BaseMainContent_AddressWindowContent_ToolTip5",html:"Введите название улицы.",target:"BaseMainContent_AddressWindowContent_StreetTxt"});new Ext.ToolTip({id:"BaseMainContent_AddressWindowContent_ToolTip6",html:"Введите номер дома.",target:"BaseMainContent_AddressWindowContent_BlockTxt"});new Ext.ToolTip({id:"BaseMainContent_AddressWindowContent_ToolTip7",html:"Введите номер корпуса (строения).",target:"BaseMainContent_AddressWindowContent_BuildingTxt"});new Ext.ToolTip({id:"BaseMainContent_AddressWindowContent_ToolTip8",html:"Введите дополнительную информацию, если это необходимо.",target:"BaseMainContent_AddressWindowContent_AdditionalInfoTxt"});BaseMainContent_AddressWindowContent_CountryCmb.setValueAndFireSelect("Российская Федерация");BaseMainContent_AddressWindowContent_CountryCmb.clearInvalid();setFSize();setFSize();});
+	//]]&gt;
+	</script><style type="text/css" id="extnet-resources"> .x-form-radio-group .x-panel-body,.x-form-check-group .x-panel-body{background-color:transparent;} .x-form-cb-label-nowrap{white-space:nowrap;} .x-form-cb-label-nowrap .x-form-item-label{white-space:normal;}.x-label-icon{width:16px;height:16px;margin-left:3px;margin-right:3px;vertical-align:middle;border:0px !important;}.x-label-value{vertical-align:middle;}.ext-ie6 .x-form-field-trigger-wrap .x-form-text, .ext-ie7 .x-form-field-trigger-wrap .x-form-text{margin-bottom: -2px;}.ext-ie6 .x-form-item .x-form-field-trigger-wrap .x-form-text, .ext-ie7 .x-form-item .x-form-field-trigger-wrap .x-form-text{margin-bottom: -1px;} .ext-ie8 .x-toolbar-cell .x-form-field-trigger-wrap .x-form-text{top:0px;}.x-textfield-icon{background-repeat:no-repeat;background-position:0 50%;width:16px;height:16px;margin-left:1px;}.x-textfield-icon-input{padding-left:20px;}.x-form-field-wrap .x-textfield-icon{top:3px;left:2px;}input.x-tree-node-cb{margin-left:1px;height:18px;vertical-align:bottom;}.x-tree-node .x-tree-node-inline-icon{background:transparent;height:16px !important;}.x-field-note{font-size:12px;color:gray;}.x-field-multi{float:left;padding-right:3px;position:relative;}div.x-inline-toolbar{padding:0px !important;border:0px !important;background-color:transparent !important;background-image:none !important;}.x-grid3 .x-row-expander-control TABLE{table-layout: auto;} .x-grid3 .x-row-expander-control TABLE.x-grid3-row-table, .x-grid3 .x-row-expander-control .x-grid3-header-offset table {table-layout:fixed;} .x-fieldset.x-form-invalid{border-color:#c30;}.ext-ie6 ul.x-menu-list li.x-menu-sep-li{height:5px !important;}.x-form-item.x-form-label-top label.x-form-item-label{width:auto;float:none;clear:none;display:inline;margin-bottom:4px;position:static;}.x-menu-field-icon{top:auto;margin-top:3px;margin-left:3px;}.x-toolbar-classic .x-btn-tl{background-position:0 0} .x-toolbar-classic .x-btn-tr{background-position:-3px 0} .x-toolbar-classic .x-btn-tc{background-position:0 -6px} .x-toolbar-classic .x-btn-ml{background-position:0 -24px} .x-toolbar-classic .x-btn-mr{background-position:-3px -24px} .x-toolbar-classic .x-btn-mc{background-position:0 -1096px} .x-toolbar-classic .x-btn-bl{background-position:0 -3px} .x-toolbar-classic .x-btn-br{background-position:-3px -3px} .x-toolbar-classic .x-btn-bc{background-position:0 -15px}.x-table-layout-cell{vertical-align:top;}.x-form-field-wrap.x-top-note .x-form-trigger{top:auto;}.x-btn-no-arrow{padding-right:0px !important;background:none !important;}.x-form-indicator{height:18px;position:absolute;left:0;top:0;display:block;background-color: transparent;background-repeat:no-repeat;background-position:0 3px;padding-top:3px;}.x-column-layout-ct {overflow:hidden;zoom:1;}.x-column-layout-bg-ct, .x-column-layout-bg-ct .x-column-inner {background-color:#f0f0f0;}.x-theme-blue .x-column-layout-bg-ct, .blue .x-column-layout-bg-ct .x-column-inner {background-color:#dfe8f6;}.x-fieldset.x-column{padding:10px;padding-top:0px;}.x-top-note-label{margin-top:14px;}.x-form-item .x-form-element .x-form-display-field{padding-top:3px;}.ux-layout-center-item{margin:0 auto;text-align:left;}.x-form-field-wrap .x-form-text.clear-right{border-right:0px !important} .x-form-field-wrap img.shift-trigger{margin-left:-1px !important}.x-combo-list-item{border: 1px dotted white;} .x-multi-selected{border: 1px dotted black;cursor:pointer;} .x-mcombo-nimg-item img {height:16px;width:0px;float:left;} .x-mcombo-img-item img {width:16px;height:16px;float:left;background-color: transparent; background-position: -1px -1px !important; background-repeat:no-repeat !important;}.ux-editable-grid{padding:0;}.x-notification-auto-hide .x-tool-close{display:none !important}.x-grid3-row-expanded .x-grid3-row-expander {background-position:-21px 2px;} .x-grid3-row-collapsed .x-grid3-row-expander {background-position:4px 2px;} .x-grid3-row-expanded .x-grid3-row-body {display:block !important;} .x-grid3-row-collapsed .x-grid3-row-body {display:none !important;}.x-form-invalid.x-form-composite{background-color:transparent !important;}.x-form-file-wrap.x-box-item{position:absolute;}.x-fieldset{padding-top: 0px !important;}.ext-shim{background-color:#cccccc;}.x-tab-strip-text{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;} .icon-accept{background-image:url("/icons/accept-png/ext.axd") !important;} .icon-vcard{background-image:url("/icons/vcard-png/ext.axd") !important;}</style>
+<style type="text/css">
+	.BaseMainContent_tree_0 { text-decoration:none; }
+	.BaseMainContent_tree_1 { width:100%;padding:0px 0px 0px 0px; }
+	.BaseMainContent_tree_2 { padding:0px 0px 0px 0px; }
+	.BaseMainContent_tree_3 { border-style:none; }
+	.BaseMainContent_tree_4 {  }
+
+</style><script type="text/javascript">{if (parent.renameActiveTab != null) parent.renameActiveTab('Favorites','Избранное');}</script><script type="text/javascript">
+    function TreeView_PopulateNodeDoCallBack(context,param) {
+        WebForm_DoCallback(context.data.treeViewID,param,TreeView_ProcessNodeData,context,TreeView_ProcessNodeData,false);
+    }
+</script><script type="text/javascript">var BaseMainContent_tree_Data = null;</script><script type="text/javascript">Sys.WebForms.PageRequestManager._addArrayElement('BaseMainContent_tree_ImageArray', '');
+Sys.WebForms.PageRequestManager._addArrayElement('BaseMainContent_tree_ImageArray', '');
+Sys.WebForms.PageRequestManager._addArrayElement('BaseMainContent_tree_ImageArray', '');
+Sys.WebForms.PageRequestManager._addArrayElement('BaseMainContent_tree_ImageArray', '/WebResource.axd?d=Vnw6Nul5Gi8dLBSg8ZsULc7f8pHiAvmg-BshmJdqAujBxt68f8WxoPC3feLi75Alh6dhTNbnFnjiVbXoJ8oz3SbxvyA1&amp;t=635589543571259667');
+Sys.WebForms.PageRequestManager._addArrayElement('BaseMainContent_tree_ImageArray', '/images/menu_closed.gif');
+Sys.WebForms.PageRequestManager._addArrayElement('BaseMainContent_tree_ImageArray', '/images/menu_open.gif');
+</script><script type="text/javascript">var BaseMainContent_tree_Data = new Object();
+BaseMainContent_tree_Data.images = BaseMainContent_tree_ImageArray;
+BaseMainContent_tree_Data.collapseToolTip = "Сворачивание {0}";
+BaseMainContent_tree_Data.expandToolTip = "Развернуть {0}";
+BaseMainContent_tree_Data.expandState = theForm.elements['BaseMainContent_tree_ExpandState'];
+BaseMainContent_tree_Data.selectedNodeID = theForm.elements['BaseMainContent_tree_SelectedNode'];
+BaseMainContent_tree_Data.selectedClass = 'selectedTreeNode ';
+BaseMainContent_tree_Data.selectedHyperLinkClass = 'selectedTreeNode ';
+(function() {
+  for (var i=0;i&lt;6;i++) {
+  var preLoad = new Image();
+  if (BaseMainContent_tree_ImageArray[i].length &gt; 0)
+    preLoad.src = BaseMainContent_tree_ImageArray[i];
+  }
+})();
+BaseMainContent_tree_Data.lastIndex = 13;
+BaseMainContent_tree_Data.populateLog = theForm.elements['BaseMainContent_tree_PopulateLog'];
+BaseMainContent_tree_Data.treeViewID = 'ctl00$ctl00$BaseMainContent$tree';
+BaseMainContent_tree_Data.name = 'BaseMainContent_tree_Data';
+</script><script type="text/javascript">new Sys.WebForms.Menu({ element: 'BaseMainContent_mnuNavigationTopMenu', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script><script type="text/javascript">Ext.onReady(function(){Ext.QuickTips.init();Ext.net.DirectEvent.showFailure = Ext.emptyFn;Ext.apply(Ext.net.DirectMethods, { GetPageRegirectClientScript:function(page,parameter,config){Ext.net.DirectMethod.request("GetPageRegirectClientScript",Ext.applyIf(config || {}, {params:{page:page,parameter:parameter},specifier:"static"}));},GetPageRegirectClientScript2:function(page,parameter,config){Ext.net.DirectMethod.request("GetPageRegirectClientScript2",Ext.applyIf(config || {}, {params:{page:page,parameter:parameter},specifier:"static"}));},CheckLogin:function(config){Ext.net.DirectMethod.request("CheckLogin",Ext.applyIf(config || {}, {specifier:"static"}));},Dragged:function(portal,columnIndex,position,id,config){Ext.net.DirectMethod.request("Dragged",Ext.applyIf(config || {}, {params:{portal:portal,columnIndex:columnIndex,position:position,id:id}}));},Resize:function(portal,col1,col2,col3,col4,portalInd,config){Ext.net.DirectMethod.request("Resize",Ext.applyIf(config || {}, {params:{portal:portal,col1:col1,col2:col2,col3:col3,col4:col4,portalInd:portalInd}}));},ClosePortlet:function(id,config){Ext.net.DirectMethod.request("ClosePortlet",Ext.applyIf(config || {}, {params:{id:id}}));},ChangeSize:function(id,config){Ext.net.DirectMethod.request("ChangeSize",Ext.applyIf(config || {}, {params:{id:id}}));},AddNewPotrlet:function(config){Ext.net.DirectMethod.request("AddNewPotrlet",Ext.applyIf(config || {}, {}));},RunControlDirectMethod:function(methodName,pars,config){Ext.net.DirectMethod.request("RunControlDirectMethod",Ext.applyIf(config || {}, {params:{methodName:methodName,pars:pars}}));},GetPageRegirectClientScript1:function(page,parameter,config){Ext.net.DirectMethod.request("GetPageRegirectClientScript1",Ext.applyIf(config || {}, {params:{page:page,parameter:parameter}}));},ctl00:{Prolong:function(config){Ext.net.DirectMethod.request("Prolong",Ext.applyIf(config || {}, {control:"ctl00"}));}},BaseMainContent_HeaderControl1:{ChangeTextOnAlertButton:function(config){Ext.net.DirectMethod.request("ChangeTextOnAlertButton",Ext.applyIf(config || {}, {control:"BaseMainContent_HeaderControl1"}));},CheckNewAlerts:function(config){Ext.net.DirectMethod.request("CheckNewAlerts",Ext.applyIf(config || {}, {control:"BaseMainContent_HeaderControl1"}));}},BaseMainContent_AlertPanel1:{ReloadAlertsOnMasterPage:function(config){Ext.net.DirectMethod.request("ReloadAlertsOnMasterPage",Ext.applyIf(config || {}, {control:"BaseMainContent_AlertPanel1"}));}},BaseMainContent_MainContent_DashboardSettingsUc:{CancelBtnHandler:function(config){Ext.net.DirectMethod.request("CancelBtnHandler",Ext.applyIf(config || {}, {control:"BaseMainContent_MainContent_DashboardSettingsUc"}));},InitDashboard:function(json,title,config){Ext.net.DirectMethod.request("InitDashboard",Ext.applyIf(config || {}, {params:{json:json,title:title},control:"BaseMainContent_MainContent_DashboardSettingsUc"}));},showWindowHandler:function(config){Ext.net.DirectMethod.request("showWindowHandler",Ext.applyIf(config || {}, {control:"BaseMainContent_MainContent_DashboardSettingsUc"}));},SaveSettings:function(config){Ext.net.DirectMethod.request("SaveSettings",Ext.applyIf(config || {}, {control:"BaseMainContent_MainContent_DashboardSettingsUc"}));}},BaseMainContent_AddressWindowContent:{GetCoordinates:function(config){Ext.net.DirectMethod.request("GetCoordinates",Ext.applyIf(config || {}, {control:"BaseMainContent_AddressWindowContent"}));},GetGoogleMapLinkByCoordinates:function(config){Ext.net.DirectMethod.request("GetGoogleMapLinkByCoordinates",Ext.applyIf(config || {}, {control:"BaseMainContent_AddressWindowContent"}));},CancelBtnHandler:function(config){Ext.net.DirectMethod.request("CancelBtnHandler",Ext.applyIf(config || {}, {control:"BaseMainContent_AddressWindowContent"}));},InitAddress:function(json,title,config){Ext.net.DirectMethod.request("InitAddress",Ext.applyIf(config || {}, {params:{json:json,title:title},control:"BaseMainContent_AddressWindowContent"}));},GetSelectedAddressString:function(country,regionId,districtId,city,lang,config){Ext.net.DirectMethod.request("GetSelectedAddressString",Ext.applyIf(config || {}, {params:{country:country,regionId:regionId,districtId:districtId,city:city,lang:lang},control:"BaseMainContent_AddressWindowContent"}));}} });Ext.net.DirectEvent.on({ajaxrequestexception:{fn:handleError}});if(Ext.query("div#BaseMainContent_Panel6_Container.AsyncRender").length&gt;0){Ext.net.ResourceMgr.destroyCmp("BaseMainContent_Panel6");new Ext.Panel({id:"BaseMainContent_Panel6",renderTo:"BaseMainContent_Panel6_Container",items:[{id:"BaseMainContent_Panel7",contentEl:"BaseMainContent_Panel7_Content",style:"margin:0px;",border:false},{id:"BaseMainContent_Panel8",contentEl:"BaseMainContent_Panel8_Content",anchor:"Bottom",style:"margin:0px;",autoHeight:true,border:false}]});}BaseMainContent_AddressWindowContent_CountryCmb.setValueAndFireSelect("Российская Федерация");BaseMainContent_AddressWindowContent_CountryCmb.clearInvalid();setFSize();setFSize();});</script></head>
+<body id="ext-gen4" class="mainBody ext-gecko ext-gecko3">
+   
+<div class="container">
+<form id="form1" action="Favorites.aspx?sh=-9006" method="post" style="height: 828px;">
+<div class="aspNetHidden">
+
+
+<input type="hidden" value="tim" id="tim" name="tim" />
+<input type="hidden" value="" id="tsm_HiddenField" name="tsm_HiddenField" />
+
+
+
+
+</div>
+
+<script type="text/javascript">
+//&lt;![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]&gt;
+</script>
+
+
+<script type="text/javascript" src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZM9nYNaGrmcy6T5zmKakvoUPuzyqv-WiGL8M69SN3ga8kx3TyQ2&amp;t=635589543571259667"></script>
+
+
+<script type="text/javascript">
+//&lt;![CDATA[
+{if (parent.renameActiveTab != null) parent.renameActiveTab('Favorites','Избранное');}//]]&gt;
+</script>
+
+<script type="text/javascript" src="/ScriptResource.axd?d=agSMDUXPN-pREW5QhKjBzC5nE9IhWPdvAgCCqZceD_2XhncyMUYYVXn9vlsHW3pL2TlswzfvPjAdiwUA6EKRF9ij7aRL7Rv35OnOHd45XTQn5brabTONsqZ7igv4TLYNO-MxNg2&amp;t=7e14e7ac"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+
+    function TreeView_PopulateNodeDoCallBack(context,param) {
+        WebForm_DoCallback(context.data.treeViewID,param,TreeView_ProcessNodeData,context,TreeView_ProcessNodeData,false);
+    }
+var BaseMainContent_tree_Data = null;//]]&gt;
+</script>
+
+<script type="text/javascript" src="/ScriptResource.axd?d=zvkqIRNUspAvS1yKeFhMb_NaBs_M9TWiCPMm3xRziL0w0zuQaewC3rdDj8_p6yOuMMTfCdFSg-X6WsN8mgTnf4h5RTxNtUUvzVASuve-10aQBoWfcI0opS69JkRuyBYSqMD-FQ2&amp;t=7e14e7ac"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+var __cultureInfo = {"name":"ru-RU","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":true,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"₽","NaNSymbol":"NaN","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":" ","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402289999999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":true},"DateSeparator":".","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"d MMMM yyyy \u0027г.\u0027 H:mm:ss","LongDatePattern":"d MMMM yyyy \u0027г.\u0027","LongTimePattern":"H:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd.MM.yyyy","ShortTimePattern":"H:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],"ShortestDayNames":["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],"DayNames":["воскресенье","понедельник","вторник","среда","четверг","пятница","суббота"],"AbbreviatedMonthNames":["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек",""],"MonthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь",""],"IsReadOnly":true,"NativeCalendarName":"григорианский календарь","AbbreviatedMonthGenitiveNames":["янв","фев","мар","апр","мая","июн","июл","авг","сен","окт","ноя","дек",""],"MonthGenitiveNames":["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря",""]},"eras":[1,"наша эра",null,0]};//]]&gt;
+</script>
+
+<script type="text/javascript" src="/ScriptResource.axd?d=yeSNAJTOPtPimTGCAo3LlUEENbMYe1b3u-95bKD0QZ94Fzl79w2GE4lrzRp2YTip7TPbsQi6GK8MlVoBaVQCFfnCJ0Vmx1rtvSqw7calwnhS9edG0&amp;t=734d43f5"></script>
+<script type="text/javascript">
+//&lt;![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('Не удалось загрузить клиентскую инфраструктуру ASP.NET Ajax .');
+//]]&gt;
+</script>
+
+<script type="text/javascript" src="/ScriptResource.axd?d=DT3YJR8QaqV61-teuz0hgitk3EZlghD3xCVDuMxmA8tAZDMPy6XFLAy2OFZueBZvb_2rgcTAOyIFZoaPHzHJuZJonm5kkUvD4lGa1hmG6pEpZIjNNl7kqL95b-ckHC4i073QqA2&amp;t=734d43f5"></script>
+<div class="aspNetHidden">
+
+	
+	
+</div>
+      <input type="hidden" value="091645" id="dsd" name="ctl00$ctl00$dsd" /> 
+
+  <script type="text/javascript">
+//&lt;![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$tsm', 'form1', ['tctl00$ctl00$BaseMainContent$UpdatePanel2','BaseMainContent_UpdatePanel2','tctl00$ctl00$BaseMainContent$UpdatePanel1','BaseMainContent_UpdatePanel1'], [], [], 90, 'ctl00$ctl00');
+//]]&gt;
+</script>
+
+  
+  <div>
+		
+    <script type="text/javascript">
+
+	    var countDown = 59;
+	    t = setTimeout(function () { CD(); }, 60000);
+
+	    var CD = function ()
+	    {
+	        getAndShowMessage();
+	        countDown--; 
+            var cd = document.getElementById("countDown");
+            if (cd != null)
+                cd.innerText = "До конца сессии осталось " + countDown + " мин.";
+            if (countDown &gt; 0) {
+                if (countDown &lt;= 2) {
+                    Ext.Msg.show({
+                        title:'Внимание!',
+                        msg: "До конца сессии осталось " + countDown + " мин. Желаете продлить?",
+                        buttons: Ext.Msg.YESNO,
+                        fn: function(button) {
+                            if (button != 'yes')
+                                return;
+                            
+                            Ext.net.DirectMethods. ctl00 .Prolong({
+                                eventMask:{ showMask: true },
+                                success: function() {
+                                    countDown = 60;
+                                    cd.innerText = "До конца сессии осталось " + countDown + " мин.";
+                            }
+                            });
+                        },
+                        icon: Ext.MessageBox.WARNING,
+                        modal: true
+                    });
+                    
+
+
+
+                 
+
+
+                }
+	                //if (countDown &lt;= 15)
+                        //$("#form1").css('background-color', 'red');
+                        //Ext.Msg.notify('Время сессии на исходе',String.format('Сессия закончится через {0} минут.', countDown));
+                    setTimeout(function () { CD(); }, 60000);
+                }
+	        else
+	            CDOut();
+
+	    }
+
+        var lastMsg = '';
+        var getAndShowMessage = function() {
+            var date = new Date();
+            var ds = "?m=" + date.getMinutes() + date.getSeconds();
+
+            var url = '' ;
+            if (url.length==0)
+                return;
+            url = url + ds;
+
+            Ext.Ajax.request({
+                method: 'get',
+                url: url,
+                success: function(response) {
+                    if (response.responseText.length&gt;1 &amp;&amp; lastMsg!=response.responseText)
+                    {
+                       // alert('a');
+                        Ext.Msg.show({
+                            title:'Внимание!',
+                            msg: response.responseText,
+                            buttons: Ext.Msg.OK,
+                            fn: function(button) {
+                                lastMsg=response.responseText;
+                            },
+                            icon: Ext.MessageBox.WARNING,
+                            modal: true
+                        });
+                    }
+            }
+        });
+
+        }
+
+	    var CDOut = function ()
+	    {
+	       
+            window.location = '/account/Login.aspx';
+	    }
+
+	    var CDReset = function ()
+	    {
+            //$("#form1").css('background-color', 'transparent');
+	        countDown = 59;
+             var cd = document.getElementById("countDown");
+            if (cd != null)
+                cd.innerText = "";
+	    }
+
+        var backup = countDown;
+        var BackupCD = function() {
+            backup = countDown;
+        }
+        var RestoreCD = function() {
+            countDown = backup;
+        }
+
+
+        var reloadMenu = function() { 
+            __doPostBack("ctl00$ctl00$BaseMainContent$btnHidden", ""); 
+        }
+
+        var printCurrentTab = function() {
+
+//         window.showModalDialog('http:\\www.ya.ru', null, 'dialogHide:yes; center:yes; resizable:no; scroll:no; dialogHeight:710px; dialogWidth:1005px;');
+//         window.close();
+
+   
+             var iframe = Ext.getCmp('BaseMainContent_MainTabPanel').getActiveTab().iframe;
+             if (iframe == null) {
+                 window.print();
+                 return;
+             }
+
+            if (typeof iframe.dom.contentWindow.getPrintUrlPars != 'undefined') {
+                window.showModalDialog(iframe.dom.contentWindow.getPrintUrlPars(), null, 'dialogHide:yes; center:yes; resizable:yes; scroll:yes; dialogHeight:600px; dialogWidth:800px;');
+                return;
+            }
+
+                
+             var id = iframe.id;
+
+             var iframe = document.frames ? document.frames[id] : document.getElementById(id);
+             var ifWin = iframe.contentWindow || iframe;     
+             iframe.focus();
+             if (ifWin.printPage)
+                ifWin.printPage(); 
+             else
+                ifWin.print();
+             
+        }
+
+       var fixFavorities = function (id) { 
+      
+            return id.replace('Favorites', 'BaseMainContent_firstTabPanel');
+        }
+
+        var renameActiveTab = function (id, title) {
+          //alert('renameActiveTab');
+            id = fixFavorities(id);
+            var tabPanel = Ext.getCmp('BaseMainContent_MainTabPanel');
+            var tab = tabPanel.getComponent(id); //.getActiveTab();
+            if (tab != null &amp;&amp; tab.id != id) {
+                tabPanel.closeTab(tab, "hide");
+                tab.id = id;
+                tab.title = title;
+
+                tabPanel.addTab(tab);
+            }
+            if (tab != null &amp;&amp; tab.id == id) 
+                tab.setTitle(title);
+
+
+        }
+
+        var reloadTab = function (id) {
+                //  alert('reloadTab');
+
+            var tabPanel = Ext.getCmp('BaseMainContent_MainTabPanel');
+            var tab = tabPanel.getComponent(id); //.getActiveTab();
+            if (tab != null) {
+                tab.reload();
+            }
+        }
+
+        var closeActiveTab = function () {
+                 //      alert('closeActiveTab');
+
+            var tabPanel = Ext.getCmp('BaseMainContent_MainTabPanel');
+            var tab = tabPanel.getActiveTab();
+            if (tab != null) {
+                tabPanel.closeTab(tab, "hide");
+            }
+            if (typeof(OnActiveTabClose)!='undefined')
+                OnActiveTabClose();
+                    
+        }
+
+        var closeTab = function (id) {
+              //          alert('closeTab');
+
+            var tabPanel = Ext.getCmp('BaseMainContent_MainTabPanel');
+            var tab = tabPanel.getComponent(id); //.getActiveTab();
+            if (tab != null) {
+                tabPanel.closeTab(tab, "hide");
+            }
+        }
+
+        function handleActivate(tab){
+           // alert('handleActivate');
+
+
+       
+            if (tab.iframe == null || typeof tab.iframe.dom.contentWindow.getMyHeight == 'undefined')
+                $tabHeight = 0;
+            else
+                $tabHeight = tab.iframe.dom.contentWindow.getMyHeight();
+            
+      
+
+             setTabPanelSize();
+        }
+
+
+        var addTab = function (id, url, title) {
+
+            id = fixFavorities(id);
+            var tabPanel = Ext.getCmp('BaseMainContent_MainTabPanel');
+
+            if ( tabPanel.items.items[0].title == title) {
+                tabPanel.setActiveTab(tabPanel.items.items[0]);
+                return;
+            }
+            
+            tabPanel.items.items[0].title == title
+
+
+            var tab = tabPanel.getComponent(id);
+
+            if (!tab || tab.url != url) {
+
+                if (tab)
+                    tabPanel.closeTab(tab, "hide");
+                tab = tabPanel.add({
+                    id: id,
+                    title: title,
+                    closable: true,
+                    //                    html: "&lt;iframe width='100%' height='100%' src='" + url + "' frameborder='0'&gt;&lt;/iframe&gt;"
+                    listeners: {activate: handleActivate, update : handleActivate},
+                    autoLoad: {
+                        showMask: true,
+                        url: url,
+                        mode: "iframe",
+                        maskMsg: "Загружается " + title + "..."
+                    },
+                        border: false,
+                        layout:"fit"
+                });
+
+                //                LoadConfig config = new LoadConfig(url); 
+                //                config.Scripts = true; 
+                //                this.Tab1.Load(config); 
+
+            }
+
+            tabPanel.setActiveTab(tab);
+        };
+
+   
+var working;
+
+$tabHeight = 0;
+var setChangedTab  = function() {
+    var tabPanel = Ext.getCmp('BaseMainContent_MainTabPanel');
+    var tab = tabPanel.getActiveTab();
+}
+
+var setTabPanelSize = function() {
+//try {
+    if (working == true)
+        return;
+      
+    working = true;
+    loadmask.show();
+    var CenterCoverPanel= BaseMainContent_CenterCoverPanel;
+    var  MainTabPanel = BaseMainContent_MainTabPanel;
+    var portalname="";
+    var isfavorite=false;
+
+    if(window.isFavoritePage!=null &amp;&amp; window.isFavoritePage != undefined &amp;&amp; MainTabPanel.getActiveTab() != null &amp;&amp; MainTabPanel.getActiveTab().id=='BaseMainContent_firstTabPanel'){
+        portalname=window.isFavoritePage();
+        isfavorite=true;
+        }
+ 
+    var portal = Ext.getCmp(portalname);
+    
+    if ($tabHeight  &gt; 0 ) {
+        MainTabPanel.setHeight($tabHeight);   
+        var tempw = document.body.clientWidth;
+        try {
+        tempw=Math.max(document.body.clientWidth , BaseMainContent_pnlNorth.getWidth() ) - BaseMainContent_pnlSettings.getWidth() -70 ;
+        } catch(e) {}
+        MainTabPanel.setWidth(tempw);     
+        working = false;
+        loadmask.hide(); 
+        return;
+        }
+        
+    var min = 0;
+    try { 
+    min = BaseMainContent_pnlSettings.getHeight();
+    } catch(e) {}
+  
+	var $formHeight = 0;// $(".container").height();
+      
+    var minalertpanheight=0;
+    try {
+    if(BaseMainContent_Panel1.getHeight()&gt;0)    
+        minalertpanheight =BaseMainContent_Panel1.getHeight()+10;
+    } catch(e) {}
+    var southHeigth = 0; //  &lt; %=pnlSouth.ClientID %&gt;.collapsed ? 0 : 70;
+    var height = Math.max(min, document.body.clientHeight - BaseMainContent_pnlNorth.getHeight())-southHeigth-minalertpanheight;
+
+    var $fh = $(".container").height();
+
+    var topmaxhgt = height;
+    try {
+    topmaxhgt=topmaxhgt+BaseMainContent_Panel1.getHeight()+ BaseMainContent_pnlNorth.getHeight();
+    } catch(e) {}
+ 
+    $(".container &gt; form").css("height", $fh);
+ 
+    if(portal==null || portal == undefined || !isfavorite)
+        MainTabPanel.setHeight(height);
+
+    var tempw = document.body.clientWidth;
+    try {
+    tempw=Math.max(document.body.clientWidth , BaseMainContent_pnlNorth.getWidth() ) - BaseMainContent_pnlSettings.getWidth() -70 ;
+    } catch(e) {}
+    MainTabPanel.setWidth(tempw);
+    
+    if(portal!=null &amp;&amp; portal != undefined &amp;&amp; isfavorite)
+        portal.setWidth(tempw-3);
+
+    working = false;
+    loadmask.hide(); 
+//} catch(e) {}
+}
+
+    var prm = Sys.WebForms.PageRequestManager.getInstance();
+    prm.add_beginRequest(prm_beginRequest);
+    prm.add_pageLoaded(prm_pageLoaded);
+
+    
+    var loadmask = new Ext.LoadMask(Ext.getBody(), { msg: "Please wait..." });
+    function prm_beginRequest(sender, args)
+    {
+        loadmask.show();
+       // Ext.Msg.notify('Пошел на сервер, скоро буду', '' );
+    }
+
+    function prm_pageLoaded(sender, args)
+    {
+      // Ext.Msg.notify('Вернулся', '' );
+
+             /// сюда не вставлять setTabPanelSize,  в ИЕ не отрабатывается. (нет объекта)
+if(window.getMyHeight!=null &amp;&amp; window.getMyHeight != 'undefined'){
+
+        $tabHeight = window.getMyHeight();
+        }
+       setTimeout(function() { setTabPanelSize(); }, 500);
+       loadmask.hide(); 
+     //  setTabPanelSize();
+  
+    } 
+        
+    
+    function setToTop(){    
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+
+    }
+
+    </script>
+    <script type="text/javascript">
+        $isNotIframe = true;
+    </script>
+<div id="BaseMainContent_Window1_Container">
+	
+	
+	
+
+	
+	
+
+	
+
+
+	
+	
+
+	
+	
+
+
+
+
+<div id="BaseMainContent_Window1" class=" x-panel x-panel-noborder" style="width: auto;"><div class="x-panel-bwrap" id="ext-gen14"><div class="x-panel-body x-panel-body-noheader x-panel-body-noborder x-border-layout-ct" id="ext-gen15" style="background-color: transparent; width: auto;"><div id="BaseMainContent_pnlNorth" class=" x-panel x-border-panel" style="width: auto; left: 0px; top: 0px;"><div class="x-panel-bwrap" id="ext-gen17"><div class="x-panel-body x-panel-body-noheader" id="ext-gen18" style="width: auto; height: 67px;"><div class="" id="BaseMainContent_pnlNorth_Content">
+                   
+               
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+<div style="top:0; margin-bottom:0;" class="head">
+<script type="text/javascript">
+        var hideAllAlertsInHeader = function() {
+            hideAlertsInHeader();
+            if(hideAlertsOnMasterPage!=null &amp;&amp; hideAlertsOnMasterPage!='undefined'){
+                hideAlertsOnMasterPage();
+            }
+        }
+
+        var hideAlertsInHeader = function() {
+            
+            if(BaseMainContent_HeaderControl1_lblalcnt.container!=null &amp;&amp; BaseMainContent_HeaderControl1_lblalcnt.container != 'undefined')
+                BaseMainContent_HeaderControl1_lblalcnt.container.hide();
+   
+    //     Ext.net.DirectMethods.BaseMainContent_HeaderControl1.ChangeTextOnAlertButton(
+    //                    {
+    //                        eventMask: { showMask: false } 
+    //                    });
+        }
+    var showAlertsInHeader = function(){    
+        
+        //if(showAlertsOnMasterPage!=null &amp;&amp; showAlertsOnMasterPage!='undefined'){
+        //    showAlertsOnMasterPage();
+        //}
+        if(BaseMainContent_HeaderControl1_lblalcnt.container!=null &amp;&amp; BaseMainContent_HeaderControl1_lblalcnt.container != 'undefined')
+            BaseMainContent_HeaderControl1_lblalcnt.container.show();
+    }
+    var requestCreate = function () {
+        Ext.Msg.show({
+            title:'Внимание!',
+            msg: "Для добавления заявки на транспортировку с вашего лицевого счета будет списана 1 заказанная услуга 'Добавление заявки на транспортировку'. Продолжить списание?",
+            buttons: Ext.Msg.YESNO,
+            fn: function(button) {
+                if (button != 'yes')
+                    return;
+
+                Redirect2Page('ShippingRequestManage');
+            },
+            animEl: 'elId',
+            icon: Ext.MessageBox.QUESTION
+        });
+     }
+
+    var auctionCreate = function() {
+        Ext.Msg.show({
+            title:'Внимание!',
+            msg: "Для проведения нового аукциона с вашего лицевого счета будет списана 1 заказанная услуга 'Проведение аукциона'. Продолжить списание?",
+            buttons: Ext.Msg.YESNO,
+            fn: function(button) {
+                if (button != 'yes')
+                    return;
+
+                Redirect2Page('AuctionCreate', '00000000-0000-0000-0000-000000000000');
+            },
+            animEl: 'elId',
+            icon: Ext.MessageBox.QUESTION
+        });
+    }
+
+        ts = setTimeout(function () { checkAlerts(); }, 300000);
+
+	    var checkAlerts = function ()
+	    {     
+            //Ext.Msg.notify('Проверка сообщений', 'Проверка сообщений');
+             
+            Ext.net.DirectMethods.BaseMainContent_HeaderControl1.CheckNewAlerts(
+             {success: function(){setTimeout(function () { checkAlerts(); } , 300000)} 
+              
+
+             });            
+	    }
+    var reloadAlertsOnMasterPageHeader = function()
+    {
+        Ext.net.DirectMethods.BaseMainContent_HeaderControl1.CheckNewAlerts();
+    }
+
+        var Go2Login = function() {
+             window.location.href = '/Account/Login.aspx';               
+        }
+    </script>
+    <img alt="" class="logo" src="/images/logo.jpg" />
+    <div class="profile">
+        <div style="display:inline;" id="BaseMainContent_HeaderControl1_ctl00_Container">
+	
+	
+	
+	<div class="x-hidden" id="BaseMainContent_HeaderControl1_Panel1_Content">
+                                        
+                                                Welcome <span class="bold">
+                                                    <span id="BaseMainContent_HeaderControl1_HeadLoginView_HeadLoginName">test_cola</span>
+                                                </span>! [
+
+                                                
+                                                <a href="/logout.ashx">Log Out</a>
+                                              
+                                                ]
+                                                <br />
+                                                 <a href="../Account/Private/EditUserInfo.aspx">Личные данные</a>
+                                                 <br />
+                                                 <a href="../Account/ChangePassword.aspx">Смена пароля</a>
+                                            
+                                    </div>
+
+
+
+<span id="BaseMainContent_HeaderControl1_ctl00" class=" x-btn-noicon" style="width: auto;"><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-label-icon " style="display: none;" /><a style="vertical-align: middle;" id="ext-gen49" href="#">Профиль</a></span></div>
+    </div>
+    <div class="searchForm">
+        <input type="text" value="Поиск" onblur="if(this.value=='')this.value='Поиск';" onclick="if(this.value=='Поиск')this.value='';" class="textInput" />
+        <input type="image" class="searchBtn" src="/images/search_btn.gif" />
+    </div>
+    <ul class="services">
+    
+       <li class="notices">
+        <div style="display:inline;" id="BaseMainContent_HeaderControl1_lnkbtnalerts_Container">
+	
+	
+
+
+
+
+
+
+
+<span id="BaseMainContent_HeaderControl1_lnkbtnalerts" class=" x-btn-noicon" style="width: auto;"><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-label-icon " style="display: none;" /><a style="vertical-align: middle;" id="ext-gen50" href="#">Уведомления</a></span></div>
+           <div style="display:inline;" id="BaseMainContent_HeaderControl1_lblalcnt_Container" class=" ii">
+
+<span class="x-label ii" id="BaseMainContent_HeaderControl1_lblalcnt"><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-label-icon " style="display: none;" /><span class="x-label-value" id="ext-gen51">1</span></span></div>
+       </li>
+      
+        <li class="help">
+            <div style="display:inline;" id="BaseMainContent_HeaderControl1_LinkButton2_Container">
+
+<span id="BaseMainContent_HeaderControl1_LinkButton2" class=" x-btn-noicon" style="width: auto;"><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-label-icon " style="display: none;" /><a style="vertical-align: middle;" id="ext-gen52" href="#">Помощь.</a></span></div>
+        
+        </li>
+        <li class="print last"><a onclick="printCurrentTab(); return false;" href="/">Печать</a></li>
+    </ul>
+</div>
+<div class="toolsWrap">
+    <div style="display:none" class="tools">
+        <div class="creatingTools">
+            <h2>Создать</h2>
+            <ul>
+                <li class="request"><a onclick="requestCreate();" href="#"><i>Заявка на перевозку</i></a></li>
+
+                <li class="auction"><a onclick="auctionCreate();" href="#"><i>Аукцион</i></a></li>
+                <li class="tender"><a onclick="return false; Redirect2Page_111('TenderCreate');" href="#"><i>Тендер</i></a></li>
+
+                <li class="vehicle"><a onclick="Redirect2Page('FleetVehiclesManage');" href="#"><i>ТС</i></a></li>
+                <li class="driver last"><a onclick="Redirect2Page('FleetDriversManage');" href="#"><i>Водитель</i></a></li>
+            </ul>
+        </div>
+        <ul class="categoties">
+            <li class="requests"><a onclick="Redirect2Page('ShippingRequestList');" href="#">Заявки</a></li>
+            <li class="cargo last"><a onclick="Redirect2Page('AuctionMemberFreeAuctionsList');" href="#">Свободные грузы</a></li>
+        </ul>
+    </div>
+</div>
+
+                </div></div></div></div><div id="BaseMainContent_pnlSettings" class=" x-panel lMenuPanel x-panel-noborder x-border-panel" style="padding-right: 0px; left: 0px; top: 69px; width: 172px;"><div class="x-panel-bwrap" id="ext-gen20"><div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="ext-gen21" style="height: auto; width: 172px;"><div id="BaseMainContent_Panel2" class=" x-panel x-panel-noborder" style="margin: 0px;"><div class="x-panel-bwrap" id="ext-gen27"><div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="ext-gen28"><div class="" id="BaseMainContent_Panel2_Content">
+                            <div id="BaseMainContent_UpdatePanel2">
+                                    <div class="curSect">
+                                        Транспортный брокер</div>
+                                </div>
+                            
+                            
+                        </div></div></div></div><div id="BaseMainContent_Panel5" class=" x-panel"><div class="x-panel-bwrap" id="ext-gen30"><div class="x-panel-body x-panel-body-noheader" id="ext-gen31"><div class="" id="BaseMainContent_Panel5_Content">
+                            <div id="BaseMainContent_UpdatePanel1">
+<a style="display:none;" href="javascript:__doPostBack('ctl00$ctl00$BaseMainContent$btnHidden','')" id="BaseMainContent_btnHidden"></a>
+
+
+                                    <div class="AsyncRender" id="BaseMainContent_Panel6_Container">
+	
+	
+
+	
+
+<div id="BaseMainContent_Panel6" class=" x-panel"><div class="x-panel-bwrap" id="ext-gen269"><div class="x-panel-body x-panel-body-noheader" id="ext-gen270"><div id="BaseMainContent_Panel7" class=" x-panel x-panel-noborder" style="margin: 0px;"><div class="x-panel-bwrap" id="ext-gen271"><div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="ext-gen272"><div class="" id="BaseMainContent_Panel7_Content">
+                                                    <a href="#BaseMainContent_tree_SkipLink"><img width="0" height="0" style="border-width:0px;" src="/WebResource.axd?d=rKN1opQVoh180LaGjXZZkF_KlPBhxJ0mjcSMNZSnenXpI9ko3JDNJDtj1nw_9ORCWX4DHQ2&amp;t=635589543571259667" alt="Пропустить Навигационные Ссылки." /></a><div alwaysenable="true" class="menuTree" id="BaseMainContent_tree">
+		<table cellspacing="0" cellpadding="0" style="border-width:0;">
+			<tbody><tr>
+				<td><a href="javascript:TreeView_ToggleNode(BaseMainContent_tree_Data,0,document.getElementById('BaseMainContent_treen0'),' ',document.getElementById('BaseMainContent_treen0Nodes'))" id="BaseMainContent_treen0"><img style="border-width:0;" alt="Сворачивание Собственные заявки" src="/images/menu_open.gif" /></a></td><td style="width:100%;padding:0px 0px 0px 0px;"><a style="text-decoration:none;" id="BaseMainContent_treet0" href="javascript:addTab('ShippingRequestList', '/Secure/TBroker/ListShippingRequest.aspx?tabbed=-1359709794', 'Собственные заявки');">Собственные заявки</a></td>
+			</tr>
+		</tbody></table><div style="display:block;" id="BaseMainContent_treen0Nodes">
+			<table cellspacing="0" cellpadding="0" style="border-width:0;">
+				<tbody><tr>
+					<td><div style="width:6px;height:1px"></div></td><td><img alt="" src="/WebResource.axd?d=Vnw6Nul5Gi8dLBSg8ZsULc7f8pHiAvmg-BshmJdqAujBxt68f8WxoPC3feLi75Alh6dhTNbnFnjiVbXoJ8oz3SbxvyA1&amp;t=635589543571259667" /></td><td style="width:100%;padding:0px 0px 0px 0px;"><a style="text-decoration:none;" id="BaseMainContent_treet1" href="javascript:addTab('ShippingRequestArchive', '/Secure/TBroker/ListShippingRequestArchive.aspx?tabbed=-1359709794', 'Архив');">Архив</a></td>
+				</tr>
+			</tbody></table>
+		</div><table cellspacing="0" cellpadding="0" style="border-width:0;">
+			<tbody><tr>
+				<td><img alt="" src="/WebResource.axd?d=Vnw6Nul5Gi8dLBSg8ZsULc7f8pHiAvmg-BshmJdqAujBxt68f8WxoPC3feLi75Alh6dhTNbnFnjiVbXoJ8oz3SbxvyA1&amp;t=635589543571259667" /></td><td style="width:100%;padding:0px 0px 0px 0px;"><a style="text-decoration:none;" id="BaseMainContent_treet2" href="javascript:addTab('ShippingRequestAssigned', '/Secure/TBroker/AssignedShippingRequests.aspx?tabbed=-1359709794', 'Полученные заявки');">Полученные заявки</a></td>
+			</tr>
+		</tbody></table><table cellspacing="0" cellpadding="0" style="border-width:0;">
+			<tbody><tr>
+				<td><a href="javascript:TreeView_ToggleNode(BaseMainContent_tree_Data,3,document.getElementById('BaseMainContent_treen3'),' ',document.getElementById('BaseMainContent_treen3Nodes'))" id="BaseMainContent_treen3"><img style="border-width:0;" alt="Сворачивание Незакрытые заявки" src="/images/menu_open.gif" /></a></td><td style="width:100%;padding:0px 0px 0px 0px;"><span style="text-decoration:none;" id="BaseMainContent_treet3" href="javascript:addTab('Test', '?tabbed=-1359709794', 'Незакрытые заявки');">Незакрытые заявки</span></td>
+			</tr>
+		</tbody></table><div style="display:block;" id="BaseMainContent_treen3Nodes">
+			<table cellspacing="0" cellpadding="0" style="border-width:0;">
+				<tbody><tr>
+					<td><div style="width:6px;height:1px"></div></td><td><img alt="" src="/WebResource.axd?d=Vnw6Nul5Gi8dLBSg8ZsULc7f8pHiAvmg-BshmJdqAujBxt68f8WxoPC3feLi75Alh6dhTNbnFnjiVbXoJ8oz3SbxvyA1&amp;t=635589543571259667" /></td><td style="width:100%;padding:0px 0px 0px 0px;"><a style="text-decoration:none;" id="BaseMainContent_treet4" href="javascript:addTab('OwnShippingRequestPool', '/Secure/TBroker/OwnShippingRequestPool.aspx?tabbed=-1359709794', 'Собственные незакрытые заявки');">Собственные незакрытые заявки</a></td>
+				</tr>
+			</tbody></table><table cellspacing="0" cellpadding="0" style="border-width:0;">
+				<tbody><tr>
+					<td><div style="width:6px;height:1px"></div></td><td><img alt="" src="/WebResource.axd?d=Vnw6Nul5Gi8dLBSg8ZsULc7f8pHiAvmg-BshmJdqAujBxt68f8WxoPC3feLi75Alh6dhTNbnFnjiVbXoJ8oz3SbxvyA1&amp;t=635589543571259667" /></td><td style="width:100%;padding:0px 0px 0px 0px;"><a style="text-decoration:none;" id="BaseMainContent_treet5" href="javascript:addTab('TransporterShippingRequestPool', '/Secure/TBroker/TransporterShippingRequestPool.aspx?tabbed=-1359709794', 'Заявки партнеров');">Заявки партнеров</a></td>
+				</tr>
+			</tbody></table>
+		</div><table cellspacing="0" cellpadding="0" style="border-width:0;">
+			<tbody><tr>
+				<td><a href="javascript:TreeView_ToggleNode(BaseMainContent_tree_Data,6,document.getElementById('BaseMainContent_treen6'),' ',document.getElementById('BaseMainContent_treen6Nodes'))" id="BaseMainContent_treen6"><img style="border-width:0;" alt="Сворачивание Претензии" src="/images/menu_open.gif" /></a></td><td style="width:100%;padding:0px 0px 0px 0px;"><span style="text-decoration:none;" id="BaseMainContent_treet6" href="javascript:addTab('Test', '?tabbed=-1359709794', 'Претензии');">Претензии</span></td>
+			</tr>
+		</tbody></table><div style="display:block;" id="BaseMainContent_treen6Nodes">
+			<table cellspacing="0" cellpadding="0" style="border-width:0;">
+				<tbody><tr>
+					<td><div style="width:6px;height:1px"></div></td><td><img alt="" src="/WebResource.axd?d=Vnw6Nul5Gi8dLBSg8ZsULc7f8pHiAvmg-BshmJdqAujBxt68f8WxoPC3feLi75Alh6dhTNbnFnjiVbXoJ8oz3SbxvyA1&amp;t=635589543571259667" /></td><td style="width:100%;padding:0px 0px 0px 0px;"><a style="text-decoration:none;" id="BaseMainContent_treet7" href="javascript:addTab('ShippingRequestClaimList', '/Secure/TBroker/ListClaimShippingRequest.aspx?tabbed=-1359709794', 'Выставленные');">Выставленные</a></td>
+				</tr>
+			</tbody></table><table cellspacing="0" cellpadding="0" style="border-width:0;">
+				<tbody><tr>
+					<td><div style="width:6px;height:1px"></div></td><td><img alt="" src="/WebResource.axd?d=Vnw6Nul5Gi8dLBSg8ZsULc7f8pHiAvmg-BshmJdqAujBxt68f8WxoPC3feLi75Alh6dhTNbnFnjiVbXoJ8oz3SbxvyA1&amp;t=635589543571259667" /></td><td style="width:100%;padding:0px 0px 0px 0px;"><a style="text-decoration:none;" id="BaseMainContent_treet8" href="javascript:addTab('ShippingRequestAssignedClaimList', '/Secure/TBroker/ListAssignedClaimShippingRequest.aspx?tabbed=-1359709794', 'Полученные');">Полученные</a></td>
+				</tr>
+			</tbody></table>
+		</div><table cellspacing="0" cellpadding="0" style="border-width:0;">
+			<tbody><tr>
+				<td><a href="javascript:TreeView_ToggleNode(BaseMainContent_tree_Data,9,document.getElementById('BaseMainContent_treen9'),' ',document.getElementById('BaseMainContent_treen9Nodes'))" id="BaseMainContent_treen9"><img style="border-width:0;" alt="Сворачивание Счета" src="/images/menu_open.gif" /></a></td><td style="width:100%;padding:0px 0px 0px 0px;"><span style="text-decoration:none;" id="BaseMainContent_treet9" href="javascript:addTab('Test', '?tabbed=-1359709794', 'Счета');">Счета</span></td>
+			</tr>
+		</tbody></table><div style="display:block;" id="BaseMainContent_treen9Nodes">
+			<table cellspacing="0" cellpadding="0" style="border-width:0;">
+				<tbody><tr>
+					<td><div style="width:6px;height:1px"></div></td><td><img alt="" src="/WebResource.axd?d=Vnw6Nul5Gi8dLBSg8ZsULc7f8pHiAvmg-BshmJdqAujBxt68f8WxoPC3feLi75Alh6dhTNbnFnjiVbXoJ8oz3SbxvyA1&amp;t=635589543571259667" /></td><td style="width:100%;padding:0px 0px 0px 0px;"><a style="text-decoration:none;" id="BaseMainContent_treet10" href="javascript:addTab('ShippingRequestBillCreatedList', '/Secure/TBroker/ListBillCreatedShippingRequest.aspx?tabbed=-1359709794', 'Выставленные счета');">Выставленные счета</a></td>
+				</tr>
+			</tbody></table><table cellspacing="0" cellpadding="0" style="border-width:0;">
+				<tbody><tr>
+					<td><div style="width:6px;height:1px"></div></td><td><img alt="" src="/WebResource.axd?d=Vnw6Nul5Gi8dLBSg8ZsULc7f8pHiAvmg-BshmJdqAujBxt68f8WxoPC3feLi75Alh6dhTNbnFnjiVbXoJ8oz3SbxvyA1&amp;t=635589543571259667" /></td><td style="width:100%;padding:0px 0px 0px 0px;"><a style="text-decoration:none;" id="BaseMainContent_treet11" href="javascript:addTab('ShippingRequestBillAssignedList', '/Secure/TBroker/ListBillAssignedShippingRequest.aspx?tabbed=-1359709794', 'Счета к оплате');">Счета к оплате</a></td>
+				</tr>
+			</tbody></table>
+		</div><table cellspacing="0" cellpadding="0" style="border-width:0;">
+			<tbody><tr>
+				<td><img alt="" src="/WebResource.axd?d=Vnw6Nul5Gi8dLBSg8ZsULc7f8pHiAvmg-BshmJdqAujBxt68f8WxoPC3feLi75Alh6dhTNbnFnjiVbXoJ8oz3SbxvyA1&amp;t=635589543571259667" /></td><td style="width:100%;padding:0px 0px 0px 0px;"><a style="text-decoration:none;" id="BaseMainContent_treet12" href="javascript:addTab('ShippingRequestTimingManage', '/Secure/TBroker/TimingManage.aspx?tabbed=-1359709794', 'Нормативы');">Нормативы</a></td>
+			</tr>
+		</tbody></table>
+	</div><a id="BaseMainContent_tree_SkipLink"></a>
+                                                </div></div></div></div><div id="BaseMainContent_Panel8" class=" x-panel x-panel-noborder" style="margin: 0px;"><div class="x-panel-bwrap" id="ext-gen274"><div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="ext-gen275" style="height: auto;"><div class="" id="BaseMainContent_Panel8_Content">
+                                                    <a href="#BaseMainContent_mnuNavigationTopMenu_SkipLink"><img width="0" height="0" style="border-width:0px;" src="/WebResource.axd?d=rKN1opQVoh180LaGjXZZkF_KlPBhxJ0mjcSMNZSnenXpI9ko3JDNJDtj1nw_9ORCWX4DHQ2&amp;t=635589543571259667" alt="Проход по ссылкам навигации" /></a><div id="BaseMainContent_mnuNavigationTopMenu" class="menu" style="float: left;">
+		<ul class="level1 static" tabindex="0" style="position: relative; width: auto; float: left;" role="menu">
+			<li role="menuitem" class="static" style="position: relative;"><a onclick="__doPostBack('ctl00$ctl00$BaseMainContent$mnuNavigationTopMenu','Тендерный брокер')" href="#" class="level1 static" tabindex="-1">Тендерный брокер</a></li><li role="menuitem" class="static" style="position: relative;"><a onclick="__doPostBack('ctl00$ctl00$BaseMainContent$mnuNavigationTopMenu','Управление автопарком')" href="#" class="level1 static" tabindex="-1">Управление автопарком</a></li><li role="menuitem" class="static" style="position: relative;"><a onclick="__doPostBack('ctl00$ctl00$BaseMainContent$mnuNavigationTopMenu','Партнеры')" href="#" class="level1 static" tabindex="-1">Партнеры</a></li><li role="menuitem" class="static" style="position: relative;"><a onclick="__doPostBack('ctl00$ctl00$BaseMainContent$mnuNavigationTopMenu','Кабинет')" href="#" class="level1 static" tabindex="-1">Кабинет</a></li>
+		</ul>
+	</div><div style="clear: left;"></div><a id="BaseMainContent_mnuNavigationTopMenu_SkipLink"></a>
+                                                </div></div></div></div></div></div></div></div>
+                                </div>
+                            
+                        </div></div></div></div></div></div></div><div id="BaseMainContent_CenterCoverPanel" class=" x-panel x-panel-noborder x-border-panel" style="width: auto; left: 180px; top: 69px;"><div class="x-panel-bwrap" id="ext-gen24"><div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="ext-gen25" style="background-color: transparent; width: auto; height: auto;"><div id="BaseMainContent_Panel1" class=" specalertclass specalertclass-noborder"><div class="specalertclass-bwrap" id="ext-gen33"><div class="specalertclass-body specalertclass-body-noheader specalertclass-body-noborder" id="ext-gen34" style="margin-bottom: 0px; height: auto;"><div class="" id="BaseMainContent_Panel1_Content">    
+							
+<script type="text/javascript">
+
+ var hideAllAlertsOnMasterPage = function() {
+       hideAlertsOnMasterPage();
+        
+      if(hideAlertsInHeader!=null &amp;&amp; hideAlertsInHeader!='undefined'){
+           hideAlertsInHeader(); setTabPanelSize();
+      }
+        }
+    var hideAlertsOnMasterPage = function() {
+       BaseMainContent_AlertPanel1_wzrdpnl1.hide(); setTabPanelSize();
+        
+      
+    }
+    var reloadAlertsOnMasterPage = function()
+    {
+        Ext.net.DirectMethods.BaseMainContent_AlertPanel1.ReloadAlertsOnMasterPage();
+    }
+    var showAlertsOnMasterPage = function()
+    {
+         BaseMainContent_AlertPanel1_wzrdpnl1.show(); setTabPanelSize();
+    }
+        </script>
+<div id="BaseMainContent_AlertPanel1_wzrdpnl1_Container">
+	
+         
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+  
+ 
+<div id="BaseMainContent_AlertPanel1_wzrdpnl1" class=" x-panel x-panel-noborder"><div class="x-panel-bwrap" id="ext-gen62"><div class="x-panel-body noticeAlert x-panel-body-noheader x-panel-body-noborder x-table-layout-ct" id="ext-gen63" style="margin-top: 10px;"><table cellspacing="0" class="x-table-layout"><tbody><tr><td class="x-table-layout-cell" id="ext-gen65"><div id="BaseMainContent_AlertPanel1_pnlcnt" class=" x-panel title x-panel-noborder"><div class="x-panel-bwrap" id="ext-gen66"><div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="ext-gen67" style="background-color: transparent;"><span>УВЕДОМЛЕНИЯ</span> <i><i> Новых 1</i></i></div></div></div></td><td class="x-table-layout-cell" id="ext-gen69"><div id="BaseMainContent_AlertPanel1_WizardPanel" class=" specalertclass specalertclass-noborder"><div class="specalertclass-bwrap" id="ext-gen70"><div class="specalertclass-body specalertclass-body-noheader specalertclass-body-noborder" id="ext-gen71" style="background-color: transparent; margin-bottom: 0px; height: auto;"><div id="BaseMainContent_AlertPanel1_ctl09" class=" specalertscls specalertscls-noborder" style="width: 319px;"><div class="specalertscls-bwrap" id="ext-gen79"><div class="specalertscls-body specalertscls-body-noheader specalertscls-body-noborder" id="ext-gen80" style="height: auto; width: 319px;"><a onclick="hideAllAlertsInHeader(); Redirect2Page('AlertsPage','c09e9bb8-f94a-4d4b-be0b-259266329ce5');" href="#" style="text-decoration:none;color:#000;font-style: italic;"> Вы можете подвести итоги тендера Новый тендер.</a></div></div></div></div><div class="specalertclass-footer specalertclass-footer-noborder x-panel-btns" id="ext-gen72" style="width: 0px;"><div class="x-panel-fbar x-small-editor x-toolbar-layout-ct" id="ext-comp-1002" style="width: auto;"><table cellspacing="0" class="x-toolbar-ct"><tbody><tr><td align="left" class="x-toolbar-left"><table cellspacing="0"><tbody><tr class="x-toolbar-left-row"></tr></tbody></table></td><td align="right" class="x-toolbar-right"><table cellspacing="0" class="x-toolbar-right-ct"><tbody><tr><td><table cellspacing="0"><tbody><tr class="x-toolbar-right-row"><td class="x-toolbar-cell" id="ext-gen75"><img id="BaseMainContent_AlertPanel1_btnPrev" src="/images/notice_prev.gif" style="border: medium none; cursor: pointer;" class="previous x-item-disabled" /></td><td class="x-toolbar-cell" id="ext-gen76"><img id="BaseMainContent_AlertPanel1_btnNext" src="/images/notice_next.gif" style="border: medium none; cursor: pointer;" class="next" /></td><td class="x-toolbar-cell" id="ext-gen77"><img id="BaseMainContent_AlertPanel1_ctl05" src="/images/icon_cross.gif" style="border: medium none; cursor: pointer;" class="close" /></td></tr></tbody></table></td><td><table cellspacing="0"><tbody><tr class="x-toolbar-extras-row"></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div><div class="x-clear" id="ext-gen74"></div></div></div></div></td></tr></tbody></table></div></div></div></div>
+
+         
+                            
+						</div></div></div></div><div id="BaseMainContent_MainTabPanel" class=" x-tab-panel" style="width: 1341px;"><div class="x-tab-panel-header x-unselectable x-tab-panel-header-plain" id="ext-gen36" style="-moz-user-select: none; width: 1341px;"><div class="x-tab-strip-wrap" id="ext-gen39" style="width: 1341px;"><ul class="x-tab-strip x-tab-strip-top" id="ext-gen41"><li id="BaseMainContent_MainTabPanel__BaseMainContent_firstTabPanel" class=""><a class="x-tab-strip-close" id="ext-gen44"></a><a href="#" class="x-tab-right" id="ext-gen45"><em class="x-tab-left"><span class="x-tab-strip-inner"><span class="x-tab-strip-text ">Избранное</span></span></em></a></li><li id="BaseMainContent_MainTabPanel__ShippingRequestList" class="x-tab-strip-closable x-tab-strip-active"><a class="x-tab-strip-close" id="ext-gen277"></a><a href="#" class="x-tab-right" id="ext-gen278"><em class="x-tab-left"><span class="x-tab-strip-inner"><span class="x-tab-strip-text ">Собственные заявки</span></span></em></a></li><li class="x-tab-edge" id="ext-gen42"><span class="x-tab-strip-text"> </span></li><div class="x-clear" id="ext-gen43"></div></ul></div><div class="x-tab-strip-spacer" id="ext-gen40"></div></div><div class="x-tab-panel-bwrap" id="ext-gen37"><div class="x-tab-panel-body favCont1 x-tab-panel-body-top" id="ext-gen38" style="width: 1339px; height: 757px;"><div id="BaseMainContent_firstTabPanel" class=" x-panel x-panel-noborder x-hide-display" style="width: 1356px;"><div class="x-panel-bwrap" id="ext-gen46"><div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="ext-gen47" style="height: auto; width: 1356px;"><div class="" id="BaseMainContent_firstTabPanel_Content">
+                            
+    <link href="/styles/jquery.reject.css" type="text/css" rel="stylesheet" />
+    <script src="/scripts/jreject/jquery.reject.min.js" type="text/javascript"></script>
+    <style type="text/css">
+     .x-window.x-window-plain.x-window-dlg {
+         width: 400px;
+         height: auto;
+     }
+     .ext-mb-text {
+         font-size: 17px !important;
+         text-transform: uppercase;
+     }
+     .ext-mb-content {
+         text-align: center;
+     }
+</style>
+    <script type="text/javascript">
+        function redirAfterEndB2C() {
+            Ext.Msg.minWidth = 400;
+            Ext.Msg.buttonText.ok = "Продлить договор";
+            Ext.Msg.show({
+                title:'Уведомление',
+                msg: "&lt;h1&gt;Внимание!&lt;/h1&gt;&lt;/br&gt;У вас закончился срок действия&lt;/br&gt;договора В2С",
+                buttons: Ext.Msg.OK,
+                fn: function(button) {
+                    if (button == 'ok') {
+                        Redirect2Page('ContractB2CDetails');
+                    }
+                },
+                modal: true
+            });
+        }
+        // function setWidth(portal,panelcolumn, width, height,prtlindex) {
+        function setWidth(portal, panelcolumn, prtlindex) {
+            var width = panelcolumn.el.getWidth();
+            var height = panelcolumn.el.getHeight();
+            var clmid = panelcolumn.id;
+        
+            var portalwidth = portal.el.getWidth();
+        
+            //вычислить client id у колонок.
+            panelcolumn.el.setStyle({ width: '', height: '' });
+            panelcolumn.setSize(width, height);
+        
+            var portalwidth = portal.el.getWidth();
+            var width1 = portal.items.items[0].getWidth();
+            var width2 = 0;
+            var width3 = 0;
+            var width4 = 0;
+            if (portal.items.length &gt; 1) {
+                if (portal.items.length == 2)
+                    width2 = portalwidth - width1;
+                else
+                    width2 = portal.items.items[1].getWidth();
+
+            }
+            if (portal.items.length &gt; 2) {
+                if (portal.items.length == 3)
+                    width3 = portalwidth - width1 - width2;
+                else
+                    width3 = portal.items.items[2].getWidth();
+            }
+
+            if (portal.items.length &gt; 3) {
+                //      if (portal.items.length == 4)
+                //          width4 = portal.items.items[3].getWidth();
+                //      else
+                width4 = portalwidth - width1 - width2 - width3;
+            }
+            // alert("1^ " + portalwidth + "=|" + width1 + "|" + width2 + "|" + width3 + "|" + width4 + "|");
+            if (width4 &gt; 0) {
+                portal.items.items[3].el.setStyle({ width: '', height: '' });
+                portal.items.items[3].setSize(width4, height);
+
+            }
+            else {
+                if (width3 &gt; 0) {
+                    portal.items.items[2].el.setStyle({ width: '', height: '' });
+                    portal.items.items[2].setSize(width3, height);
+
+                }
+                else {
+                    width3 = 0;
+                    width2 = portalwidth - width1;
+                    if (width2 &gt; 0) {
+                        portal.items.items[1].el.setStyle({ width: '', height: '' });
+                        portal.items.items[1].setSize(width2, height);
+                    }
+                    else
+                        width2 = 0;
+
+                }
+            }
+
+
+            Ext.net.DirectMethods.Resize(portalwidth, width1, width2, width3, width4, prtlindex, {
+                success: function (result) {
+                
+                    if (result == true) {
+                        setPortalHeight();
+
+                    }
+                    else
+                        portal.body.unmask();
+                }
+
+            });
+ 
+
+        }
+
+
+
+        var setPortalHeight = function () {
+
+            var panel = Ext.getCmp("BaseMainContent_MainContent_PanelWithPortlets");
+
+            if (panel != undefined) {
+                var count = 0;
+                var totalcount = 0;
+                for (var i = 0; i &lt; panel.items.length; i++) {
+                    count = 0;
+                    var portal = panel.items.items[i];
+                    portal.setWidth(panel.getWidth() - 3);
+                    // alert(portal.getWidth());
+                    for (var j = 0; j &lt; portal.items.length; j++) {
+                        var tmp = portal.items.items[j].items.length;
+                        if (tmp &gt; 0) {
+                            var tmpw = portal.items.items[j].getWidth();
+                            for (var dd = 0; dd &lt; tmp; dd++) 
+                                portal.items.items[j].items.items[dd].setWidth(tmpw-20);
+                        }
+                        if (count &lt; tmp)
+                            count = tmp;
+                    }
+                    portal.setHeight(count * 800 + 50);
+
+                    if (count == 0) {
+                        portal.setHeight(200);
+
+
+                    }
+
+                }
+                totalcount = totalcount + count;
+            }
+
+        }
+
+
+ 
+        var getPortalHeight = function () {
+
+            return parseInt(totalcount);
+
+        }
+        var setFSize = function () {
+
+            if (window.SetSplitPanelSize != null &amp;&amp; window.SetSplitPanelSize != undefined )
+                SetSplitPanelSize();
+            setTimeout(setPortalHeight, 1000);
+
+
+        }
+   
+        var reloadCurPage = function () {
+
+            location.reload();
+
+        }
+        var isFavoritePage = function () {
+            return "BaseMainContent_MainContent_PanelWithPortlets";
+
+        }
+ 
+        //$.reject({
+        //    reject: {
+        //        //all: true,
+        //        msie: 8,
+        //        chrome: 32,
+        //        opera: 19,
+        //        firefox: 27,
+        //        safari: 6,
+        //        unknown: true // Everything else  
+        //    },
+        //    browserInfo: {
+        //        firefox: {
+        //            text: 'Firefox',
+        //            url: 'http://www.mozilla.org/ru/',
+        //        },
+        //        opera: {
+        //            text: 'Opera',
+        //            url: 'http://www.opera.com/ru/',
+        //        },
+        //        chrome: {
+        //            text: 'Chrome',
+        //            url: 'http://www.google.com/chrome/',
+        //        },
+        //        msie: {  
+        //            text: 'Internet Explorer',  
+        //            url: 'http://www.microsoft.com/windows/Internet-explorer/',  
+        //        },
+        //        yandex: {
+        //            text: 'Яндекс браузер',
+        //            url: 'http://browser.yandex.ru/',
+        //        },
+
+        //    },
+        //    display: ['msie', 'chrome', 'opera', 'firefox', 'yandex'],
+        //    imagePath: '/Images/browsers/',
+        //    header: 'Версия вашего браузера не поддерживается!',
+        //    paragraph1: 'В вашей версии интернет-обозревателя система Loginet может работать некорректно.&lt;br&gt;&lt;span style="font-weight:bold"&gt;После обновления браузера, если это окно появится снова, нажмите ctrl + F5&lt;/span&gt;',
+        //    paragraph2: 'Ссылки для обновления интернет-обозревателя:',
+        //    closeMessage: '',
+        //    close: false,
+        //});
+
+    </script>
+     
+     
+
+
+   
+  <div id="BaseMainContent_MainContent_pnlSettings_Container">
+	
+<div id="BaseMainContent_MainContent_pnlSettings" class=" x-panel x-panel-noborder"><div class="x-panel-header x-panel-header-noborder x-unselectable" id="ext-gen82" style="-moz-user-select: none;"><span class="x-panel-header-text" id="ext-gen85">Избранное</span></div><div class="x-panel-bwrap" id="ext-gen83"><div class="x-panel-body x-panel-body-noborder" id="ext-gen84"><div class="" id="BaseMainContent_MainContent_pnlSettings_Content">
+    <div style="padding:8px 11px 10px;" class="x-panel-tbar x-panel-tbar-noborder">
+    
+        <div style="display:inline;" id="BaseMainContent_MainContent_cbWP2Add_Container" class=" favSelect">
+	
+
+
+<div class="x-form-field-wrap x-form-field-trigger-wrap" id="ext-gen87" style="overflow: hidden; width: 350px;"><input type="hidden" id="ext-gen91" name="BaseMainContent_MainContent_cbWP2Add_Value" value="" /><input type="text" name="BaseMainContent_MainContent_cbWP2Add" id="BaseMainContent_MainContent_cbWP2Add" autocomplete="off" size="24" class=" x-form-text x-form-field clear-right x-form-empty-field x-trigger-noedit" style="width: 290px;" readonly="readonly" /><span class="x-form-twin-triggers" id="ext-gen88"><img class="x-form-trigger x-form-simpleplus-trigger" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" ext:qtip="Добавить" ext:tid="" id="ext-gen89" /><img class="x-form-trigger x-form-arrow-trigger" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" id="ext-gen90" /></span><input type="hidden" name="BaseMainContent_MainContent_cbWP2Add_SelIndex" id="BaseMainContent_MainContent_cbWP2Add_SelIndex" autocomplete="off" size="20" class=" x-form-hidden x-form-field" /></div></div>    
+        <div style="display:inline;" id="BaseMainContent_MainContent_btnHidden_Container">
+
+<table cellspacing="0" class="x-btn  x-btn-noicon x-hide-display" id="BaseMainContent_MainContent_btnHidden"><tbody class="x-btn-small x-btn-icon-small-left"><tr><td class="x-btn-tl"><i> </i></td><td class="x-btn-tc"></td><td class="x-btn-tr"><i> </i></td></tr><tr><td class="x-btn-ml"><i> </i></td><td class="x-btn-mc"><em unselectable="on" class=""><button type="button" id="ext-gen92" class=" x-btn-text"> </button></em></td><td class="x-btn-mr"><i> </i></td></tr><tr><td class="x-btn-bl"><i> </i></td><td class="x-btn-bc"></td><td class="x-btn-br"><i> </i></td></tr></tbody></table></div> 
+
+
+       
+    <input type="submit" style="display:none;" class="btnAdd" id="BaseMainContent_MainContent_btnAdd" value="Добавить" name="ctl00$ctl00$BaseMainContent$MainContent$btnAdd" />
+
+ 
+<script type="text/javascript">
+
+var submit = null;
+
+    //Cancel Button
+    var  BaseMainContent_MainContent_DashboardSettingsUc_PopupWndDashboard_showWindowHandler = function () {
+   
+         Ext.net.DirectMethods. BaseMainContent_MainContent_DashboardSettingsUc .showWindowHandler({
+                eventMask: { showMask: true },
+                success: function(result) { 
+                     BaseMainContent_MainContent_DashboardSettingsUc_PopupWndDashboard .show();
+
+                }
+        });
+    };
+
+       //Cancel Button
+    var  BaseMainContent_MainContent_DashboardSettingsUc_PopupWndDashboard_cancelBtnHandler = function () {
+         Ext.net.DirectMethods. BaseMainContent_MainContent_DashboardSettingsUc .CancelBtnHandler({
+                eventMask: { showMask: true },
+                success: function() {
+                     BaseMainContent_MainContent_DashboardSettingsUc_PopupWndDashboard .hide();
+
+                }
+        });
+    };
+
+     //OK Button
+ 	var BaseMainContent_MainContent_DashboardSettingsUc_PopupWndDashboard_closeWnd = function () {
+    Ext.net.DirectMethods. BaseMainContent_MainContent_DashboardSettingsUc .SaveSettings(
+    {  
+    eventMask: { showMask: true },
+                success: function(result) { 
+                 BaseMainContent_MainContent_DashboardSettingsUc_PopupWndDashboard .hide();
+        location.reload();
+         }
+    
+     });
+    
+ 	}
+
+
+    //====================
+
+
+
+
+</script> 
+<div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_btnChoose_Container">
+
+<table cellspacing="0" class="x-btn panelCust x-btn-noicon" id="BaseMainContent_MainContent_DashboardSettingsUc_btnChoose" style="width: auto;"><tbody class="x-btn-small x-btn-icon-small-left"><tr><td class="x-btn-tl"><i> </i></td><td class="x-btn-tc"></td><td class="x-btn-tr"><i> </i></td></tr><tr><td class="x-btn-ml"><i> </i></td><td class="x-btn-mc"><em unselectable="on" class=""><button type="button" id="ext-gen93" class=" x-btn-text">Настройки панели</button></em></td><td class="x-btn-mr"><i> </i></td></tr><tr><td class="x-btn-bl"><i> </i></td><td class="x-btn-bc"></td><td class="x-btn-br"><i> </i></td></tr></tbody></table></div>
+
+
+	
+	
+
+
+
+
+
+  
+				<div class="clearboth"></div>
+                   </div>
+                        </div></div></div></div></div> 
+ 
+ <div id="BaseMainContent_MainContent_PanelforRender_Container">
+	
+	
+	
+
+
+
+
+<div id="BaseMainContent_MainContent_Resizable0Column0_Container">
+
+</div><div id="BaseMainContent_MainContent_Resizable0Column1_Container">
+
+</div>
+
+<div id="BaseMainContent_MainContent_PanelforRender" class=" x-panel x-panel-noborder"><div class="x-panel-bwrap" id="ext-gen168"><div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="ext-gen169"><div id="BaseMainContent_MainContent_PanelWithPortlets" class=" x-panel x-panel-noborder" style="width: 1355px;"><div class="x-panel-bwrap" id="ext-gen171"><div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="ext-gen172" style="background-color: transparent; width: 1355px;"><div id="BaseMainContent_MainContent_DashboardPortal0" class=" x-panel x-portal" style="width: 0px;"><div class="x-panel-header x-unselectable" id="ext-gen174" style="-moz-user-select: none;"><span class="x-panel-header-text" id="ext-gen177">Тендеры</span></div><div class="x-panel-bwrap" id="ext-gen175"><div class="x-panel-body x-column-layout-ct" id="ext-gen176" style="background-color: transparent; overflow: auto; position: relative; height: 199px; width: 0px;"><div class="x-column-inner" id="ext-gen179" style="width: 1350px; height: 164px;"><div id="BaseMainContent_MainContent_DashboardPortal0Column0" class=" x-portal-column x-column" style="padding: 10px; width: 0px; height: 144px; position: relative;"><div class="x-resizable-handle x-resizable-handle-south x-unselectable" id="ext-gen183" style="-moz-user-select: none; opacity: 0;"></div><div class="x-resizable-handle x-resizable-handle-east x-unselectable" id="ext-gen184" style="-moz-user-select: none; opacity: 0;"></div><div class="x-resizable-handle x-resizable-handle-southeast x-unselectable" id="ext-gen185" style="-moz-user-select: none; opacity: 0;"></div></div><div id="BaseMainContent_MainContent_DashboardPortal0Column1" class=" x-portal-column x-column" style="padding: 10px; width: 1317px; height: 144px; position: relative;"><div class="x-resizable-handle x-resizable-handle-south x-unselectable" id="ext-gen186" style="-moz-user-select: none; opacity: 0;"></div><div class="x-resizable-handle x-resizable-handle-east x-unselectable" id="ext-gen187" style="-moz-user-select: none; opacity: 0;"></div><div class="x-resizable-handle x-resizable-handle-southeast x-unselectable" id="ext-gen188" style="-moz-user-select: none; opacity: 0;"></div></div><div class="x-clear" id="ext-gen180"></div></div></div></div></div></div></div></div></div></div></div></div> 
+  
+
+
+                            <div class="clear">
+                            </div>
+                        </div></div></div></div><div id="ShippingRequestList" class=" x-panel x-panel-noborder" style="width: 1339px;"><div class="x-panel-bwrap" id="ext-gen279"><div class="x-panel-body x-panel-body-noheader x-panel-body-noborder" id="ext-gen280" style="width: 1339px; height: 757px;"><iframe frameborder="0" src="/Secure/TBroker/ListShippingRequest.aspx?tabbed=-1359709794" class="" name="ShippingRequestList_IFrame" id="ShippingRequestList_IFrame" style="width: 1339px; height: 757px;"></iframe></div></div></div></div></div></div><input type="hidden" name="BaseMainContent_MainTabPanel_ActiveTab" id="BaseMainContent_MainTabPanel_ActiveTab" autocomplete="off" size="20" class=" x-form-hidden x-form-field" value="ShippingRequestList:1" /></div></div></div><div id="BaseMainContent_pnlSettings-xsplit" class="x-layout-split x-layout-split-west x-splitbar-h" style="left: 172px; top: 69px; height: 67px;"> </div></div></div></div></div>
+
+ 
+
+					
+
+
+
+   
+    <div class="clear">
+    </div>
+    
+
+    
+    
+    
+   
+<script type="text/javascript">
+
+
+    //====address btn===============
+         	var submit = null;
+    var showPopUpAddress = function (beaddr,clid,title) {
+        submit = clid;
+        BaseMainContent_AddressWindowContent_UIDHdn .setValue(clid);
+ 	      Ext.net.DirectMethods. BaseMainContent_AddressWindowContent .InitAddress(beaddr, title,{
+                eventMask: { showMask: true },
+                success: function() {
+                     BaseMainContent_AddressWindowContent_PopupWndAddress .show();
+                }
+        });
+ 	};
+
+       //Cancel Button
+    var  BaseMainContent_AddressWindowContent_PopupWndAddress_cancelBtnHandler = function () {
+         Ext.net.DirectMethods. BaseMainContent_AddressWindowContent .CancelBtnHandler({
+                eventMask: { showMask: true },
+                success: function() {
+                     BaseMainContent_AddressWindowContent_PopupWndAddress .hide();
+
+                }
+        });
+    };
+
+     //OK Button
+ 	var BaseMainContent_AddressWindowContent_PopupWndAddress_closeWnd = function () {
+    Ext.net.DirectMethods. BaseMainContent_AddressWindowContent .GetSelectedAddressString(BaseMainContent_AddressWindowContent_CountryCmb.getValue(), BaseMainContent_AddressWindowContent_RegionCmb.getValue(), BaseMainContent_AddressWindowContent_DistrictCmb.getValue(), BaseMainContent_AddressWindowContent_CityCmb.getValue(), BaseMainContent_AddressWindowContent_CountryCmb.getText(),
+    {  
+    eventMask: { showMask: true },
+                success: function(result) {
+                submit(result);
+                 BaseMainContent_AddressWindowContent_PopupWndAddress .hide();
+  
+         }
+    
+     });
+    
+ 	}
+
+
+    var reloadCombo = function(combo) {
+       if (combo.value == null || combo.value.length == 0)
+        { 
+        combo.store.removeAll();
+        setTimeout(function() { combo.getStore().reload(); }, 200);
+        }
+    }
+
+    var clearCombos = function(level)
+    {
+        if (level &gt; 0)
+            BaseMainContent_AddressWindowContent_PopupWndAddress_clearTextFieldValues();
+        if (level &gt; 1)
+            BaseMainContent_AddressWindowContent_CityCmb .clearValue();
+        if (level &gt; 2)
+            BaseMainContent_AddressWindowContent_DistrictCmb.clearValue();
+        if (level &gt; 3)
+            BaseMainContent_AddressWindowContent_RegionCmb.clearValue();           
+            
+    }
+    	//Country combo box Event Handler 
+ 	 var BaseMainContent_AddressWindowContent_PopupWndAddress_countryCmbHandler  = function () {
+        BaseMainContent_AddressWindowContent_PopupWndAddress_clearTextFieldValues ();
+        BaseMainContent_AddressWindowContent_PopupWndAddress_setEnabledByCondition ();
+        BaseMainContent_AddressWindowContent_PopupWndAddress_setEnableBtn();
+        
+           
+            BaseMainContent_AddressWindowContent_RegionCmb.clearValue();
+            BaseMainContent_AddressWindowContent_DistrictCmb.clearValue();
+            BaseMainContent_AddressWindowContent_CityCmb .clearValue();
+             
+         
+
+         reloadCombo(BaseMainContent_AddressWindowContent_RegionCmb);
+         reloadCombo(BaseMainContent_AddressWindowContent_DistrictCmb);
+     }
+
+     var BaseMainContent_AddressWindowContent_PopupWndAddress_regionCmbHandler = function(){
+        
+        BaseMainContent_AddressWindowContent_CityCmb .clearValue();
+        BaseMainContent_AddressWindowContent_DistrictCmb.clearValue();
+         reloadCombo(BaseMainContent_AddressWindowContent_DistrictCmb);
+         //reloadCombo(BaseMainContent_AddressWindowContent_CityCmb);        
+     }
+     var BaseMainContent_AddressWindowContent_PopupWndAddress_districtCmbHandler = function(){
+        BaseMainContent_AddressWindowContent_CityCmb .clearValue();
+        //reloadCombo(BaseMainContent_AddressWindowContent_CityCmb);  
+     }
+
+      var BaseMainContent_AddressWindowContent_PopupWndAddress_clearTextFieldValues  = function () {
+ 	     BaseMainContent_AddressWindowContent_StreetTxt .setValue(null);
+ 	     BaseMainContent_AddressWindowContent_BlockTxt .setValue(null);
+ 	     BaseMainContent_AddressWindowContent_BuildingTxt .setValue(null);
+ 	     BaseMainContent_AddressWindowContent_AdditionalInfoTxt .setValue(null);
+
+ 	     
+
+ 	 } 
+
+     var BaseMainContent_AddressWindowContent_PopupWndAddress_setEnableTextFields = function()
+     {
+        var country = BaseMainContent_AddressWindowContent_CountryCmb.getValue();
+         var city = BaseMainContent_AddressWindowContent_CityCmb.getValue();
+        if(country != "" &amp;&amp; city != "")
+        {
+             BaseMainContent_AddressWindowContent_StreetTxt .setDisabled(false);
+ 	         BaseMainContent_AddressWindowContent_BlockTxt .setDisabled(false);
+ 	         BaseMainContent_AddressWindowContent_BuildingTxt .setDisabled(false);
+             BaseMainContent_AddressWindowContent_AdditionalInfoTxt .setDisabled(false);
+        }
+        else
+        {
+             BaseMainContent_AddressWindowContent_StreetTxt .setDisabled(true);
+ 	         BaseMainContent_AddressWindowContent_BlockTxt .setDisabled(true);
+ 	         BaseMainContent_AddressWindowContent_BuildingTxt .setDisabled(true);
+             BaseMainContent_AddressWindowContent_AdditionalInfoTxt .setDisabled(true);
+        }
+     }
+
+     var BaseMainContent_AddressWindowContent_PopupWndAddress_setEnableBtn = function()
+     {
+         var country = BaseMainContent_AddressWindowContent_CountryCmb.getValue();
+         var city = BaseMainContent_AddressWindowContent_CityCmb.getValue();
+         if (country != "" &amp;&amp; city != "")
+         {
+            BaseMainContent_AddressWindowContent_SubmitBtn.setDisabled(false);
+         }
+         else
+         {
+            BaseMainContent_AddressWindowContent_SubmitBtn.setDisabled(true);
+         }
+         BaseMainContent_AddressWindowContent_PopupWndAddress_setEnableTextFields();
+     }
+
+      //Setup enabled By Condition
+ 	 var BaseMainContent_AddressWindowContent_PopupWndAddress_setEnabledByCondition  = function () {
+
+ 	     if (! BaseMainContent_AddressWindowContent_CountryCmb .getValue()) {
+ 	         BaseMainContent_AddressWindowContent_CityCmb .disable();
+ 	         BaseMainContent_AddressWindowContent_StreetTxt .disable();
+ 	         BaseMainContent_AddressWindowContent_BlockTxt .disable();
+ 	         BaseMainContent_AddressWindowContent_BuildingTxt .disable();
+ 	         BaseMainContent_AddressWindowContent_AdditionalInfoTxt .disable();
+             
+ 	         
+ 	     }
+ 	     else {
+ 	         BaseMainContent_AddressWindowContent_CityCmb .enable();
+ 	         BaseMainContent_AddressWindowContent_StreetTxt .enable();
+ 	         BaseMainContent_AddressWindowContent_BlockTxt .enable();
+ 	         BaseMainContent_AddressWindowContent_BuildingTxt .enable();
+ 	         BaseMainContent_AddressWindowContent_AdditionalInfoTxt .enable();
+
+ 	         
+
+ 	     }
+         
+
+ 	 }
+
+          //Get Coordinates
+ 	 
+         
+         var BaseMainContent_AddressWindowContent_PopupWndAddress_disableAll  = function () {
+
+             BaseMainContent_AddressWindowContent_CountryCmb .disable(true);
+             BaseMainContent_AddressWindowContent_CityCmb .disable();
+             BaseMainContent_AddressWindowContent_StreetTxt .disable();
+             BaseMainContent_AddressWindowContent_BlockTxt .disable();
+             BaseMainContent_AddressWindowContent_BuildingTxt .disable();
+             BaseMainContent_AddressWindowContent_AdditionalInfoTxt .disable();
+             BaseMainContent_AddressWindowContent_SubmitBtn .disable();
+             
+         }
+          	  //City combo box Event Handler 
+ 	 var BaseMainContent_AddressWindowContent_PopupWndAddress_cityCmbHandler= function () {
+ 	     BaseMainContent_AddressWindowContent_PopupWndAddress_clearTextFieldValues ();
+         BaseMainContent_AddressWindowContent_PopupWndAddress_setEnableBtn();  
+               
+ 	 }
+
+ 	 //City combo box store Event Handler 
+ 	 var BaseMainContent_AddressWindowContent_PopupWndAddress_cityCmbStoreHandler = function () {
+         BaseMainContent_AddressWindowContent_PopupWndAddress_clearTextFieldValues ();
+        if(BaseMainContent_AddressWindowContent_CityCmb.getValue()==''){
+ 	    
+         BaseMainContent_AddressWindowContent_CityCmb .setValue( BaseMainContent_AddressWindowContent_CityCmb .store.getAt(0).get('Item1'));
+ 
+                }
+        
+ 	 };   
+
+    //====================   
+    
+//    var BaseMainContent_AddressWindowContent_PopupWndAddress_get_Value = function()
+//    {
+//        alert( BaseMainContent_AddressWindowContent_CountryCmb.getText());
+//        return BaseMainContent_AddressWindowContent_CountryCmb.getText();
+//    }
+
+</script>
+
+	
+	
+
+
+
+
+	
+	
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+	
+	
+
+
+
+
+	
+	
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+<div style="TEXT-ALIGN: right" id="countDown"></div>
+<div style="left: 25px; top: 69px; width: 1550px;" class="x-layout-split x-layout-split-north x-splitbar-v" id="BaseMainContent_pnlNorth-xsplit_manual"> 
+    <div onmouseout="$(this).toggleClass('x-layout-mini-over');" onmouseover="$(this).toggleClass('x-layout-mini-over');" onclick="HideSplitPanel(this,'BaseMainContent_pnlNorth-xcollapsed_manual','BaseMainContent_pnlNorth');" class="x-layout-mini x-layout-mini-north"> </div>
+</div>
+<div style="left: 205px; top: 317.5px; height: 361px; margin-left: -16px;" class="x-layout-split x-layout-split-west x-splitbar-h" id="BaseMainContent_pnlSettings-xsplit_manual"> 
+    <div id="ext-gen23" onmouseout="$(this).toggleClass('x-layout-mini-over');" onmouseover="$(this).toggleClass('x-layout-mini-over');" onclick="HideSplitPanel(this,'BaseMainContent_pnlSettings-xcollapsed_manual','BaseMainContent_pnlSettings');" class="x-layout-mini x-layout-mini-west"> </div>
+</div>
+
+<div style="display: none; left: 25px; top: 317.5px; width: 8px; height: 361px; visibility: visible;" class="x-layout-collapsed x-layout-collapsed-west x-layout-cmini-west" id="BaseMainContent_pnlSettings-xcollapsed_manual">
+    <div onmouseout="$(this).toggleClass('x-layout-mini-over');" onmouseover="$(this).toggleClass('x-layout-mini-over');" onclick="ShowSplitPanel(this,'BaseMainContent_pnlSettings-xsplit_manual','BaseMainContent_pnlSettings');" class="x-layout-mini x-layout-mini-west"> </div>
+</div>
+
+<div style="display: none; left: 25px; top: 0px; width: 1550px; height: 8px; visibility: visible;" class="x-layout-collapsed x-layout-collapsed-north x-layout-cmini-north" id="BaseMainContent_pnlNorth-xcollapsed_manual">
+    <div onmouseout="$(this).toggleClass('x-layout-mini-over');" onmouseover="$(this).toggleClass('x-layout-mini-over');" onclick="ShowSplitPanel(this,'BaseMainContent_pnlNorth-xsplit_manual','BaseMainContent_pnlNorth');" class="x-layout-mini x-layout-mini-north"> </div>
+</div>
+ <script type="text/javascript">
+
+     function HideSplitPanel(ell, elcollapsed,pnid) {
+         var tabPnl = Ext.getCmp(pnid);
+         tabPnl.hide();
+         $(ell).parent().css('display', 'none');
+         $('#' + elcollapsed).css('display', 'block');
+         setTabPanelSize();  
+     }
+     function ShowSplitPanel(ell, elcollapsed, pnid) {
+          var tabPnl = Ext.getCmp(pnid);
+          tabPnl.show();
+          $(ell).parent().css('display', 'none');
+          $('#' + elcollapsed).css('display', 'block');
+          setTabPanelSize();  
+        // $(ell).parent().css('display', 'block');
+     }
+     function SetSplitPanelSize() {
+         //try
+         {
+             var setpnlheight = 0;
+             var MainTabPanel = Ext.getCmp('BaseMainContent_MainTabPanel');
+             try
+             {
+                 if (MainTabPanel != null &amp;&amp; MainTabPanel != undefined)
+                     setpnlheight = MainTabPanel.getHeight();
+             } catch (e) { }
+             var pnlNorth = Ext.getCmp('BaseMainContent_pnlNorth');
+						 if (pnlNorth != null &amp;&amp; pnlNorth != undefined)
+						    var nPnl = pnlNorth.getWidth();
+             else
+                 var nPnl = document.body.clientWidth-50;
+             var sPnl = 0;
+             try
+             {
+                 sPnl = Ext.getCmp('BaseMainContent_pnlSettings').getHeight();
+             } catch (e) { }
+             if (sPnl == 0)
+                 sPnl = document.body.clientHeight;
+             sPnl = sPnl / 2;
+
+             $('#BaseMainContent_pnlSettings-xcollapsed_manual').css('top', sPnl);
+             $('#BaseMainContent_pnlSettings-xcollapsed_manual').css('height', setpnlheight);
+             $('#BaseMainContent_pnlSettings-xsplit_manual').css('top', sPnl);
+             $('#BaseMainContent_pnlSettings-xsplit_manual').css('height', setpnlheight);
+             $('#BaseMainContent_pnlSettings-xsplit_manual').css('margin-left', '-16px');
+             $('#BaseMainContent_pnlNorth-xcollapsed_manual').css('width', nPnl);
+             $('#BaseMainContent_pnlNorth-xsplit_manual').css('width', nPnl);
+             $('#BaseMainContent_pnlNorth-xsplit_manual').css('top', '69px');
+					 } //catch (e) { }
+     }
+     $(document).ready(function () {
+     	SetSplitPanelSize();
+         $(window).resize(function () {             
+             var MainTabPanel = Ext.getCmp('BaseMainContent_MainTabPanel');
+             if (MainTabPanel != null &amp;&amp; MainTabPanel != undefined) {
+                 setTabPanelSize();
+                 if (window.setPortalHeight != null &amp;&amp; window.setPortalHeight != undefined &amp;&amp; MainTabPanel.getActiveTab() != null &amp;&amp; MainTabPanel.getActiveTab().id == 'BaseMainContent_firstTabPanel') {
+                     setTimeout(window.setPortalHeight, 500);   //window.setPortalHeight();
+                 }
+                 SetSplitPanelSize();
+             }
+         });
+
+
+
+     });
+
+
+                    </script>
+
+        
+        
+  </div>
+
+  
+<script type="text/javascript">
+//&lt;![CDATA[
+var BaseMainContent_tree_ImageArray =  new Array('', '', '', '/WebResource.axd?d=Vnw6Nul5Gi8dLBSg8ZsULc7f8pHiAvmg-BshmJdqAujBxt68f8WxoPC3feLi75Alh6dhTNbnFnjiVbXoJ8oz3SbxvyA1&amp;t=635589543571259667', '/images/menu_closed.gif', '/images/menu_open.gif');
+//]]&gt;
+</script>
+
+
+<script type="text/javascript">
+//&lt;![CDATA[
+(function() {var fn = function() {$get("tsm_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();
+WebForm_InitCallback();var BaseMainContent_tree_Data = new Object();
+BaseMainContent_tree_Data.images = BaseMainContent_tree_ImageArray;
+BaseMainContent_tree_Data.collapseToolTip = "Сворачивание {0}";
+BaseMainContent_tree_Data.expandToolTip = "Развернуть {0}";
+BaseMainContent_tree_Data.expandState = theForm.elements['BaseMainContent_tree_ExpandState'];
+BaseMainContent_tree_Data.selectedNodeID = theForm.elements['BaseMainContent_tree_SelectedNode'];
+BaseMainContent_tree_Data.selectedClass = 'BaseMainContent_tree_4 selectedTreeNode ';
+BaseMainContent_tree_Data.selectedHyperLinkClass = 'BaseMainContent_tree_3 selectedTreeNode ';
+(function() {
+  for (var i=0;i&lt;6;i++) {
+  var preLoad = new Image();
+  if (BaseMainContent_tree_ImageArray[i].length &gt; 0)
+    preLoad.src = BaseMainContent_tree_ImageArray[i];
+  }
+})();
+BaseMainContent_tree_Data.lastIndex = 0;
+BaseMainContent_tree_Data.populateLog = theForm.elements['BaseMainContent_tree_PopulateLog'];
+BaseMainContent_tree_Data.treeViewID = 'ctl00$ctl00$BaseMainContent$tree';
+BaseMainContent_tree_Data.name = 'BaseMainContent_tree_Data';
+Sys.WebForms.PageRequestManager.getInstance()._registerDisposeScript("BaseMainContent_UpdatePanel1", "BaseMainContent_tree_ImageArray.length = 0;\r\nBaseMainContent_tree_Data = null;");
+//]]&gt;
+</script>
+<script type="text/javascript">new Sys.WebForms.Menu({ element: 'BaseMainContent_mnuNavigationTopMenu', disappearAfter: 500, orientation: 'vertical', tabIndex: 0, disabled: false });</script><div class="x-window-proxy" id="ext-gen103"></div><div class="ext-el-mask" id="ext-gen104" style="display: none;"></div><div id="BaseMainContent_MainContent_DashboardSettingsUc_PopupWndDashboard" class=" x-window x-resizable-pinned" style="position: absolute; z-index: 11000; visibility: hidden; left: -10000px; top: -10000px; width: 602px;"><div class="x-window-tl"><div class="x-window-tr"><div class="x-window-tc"><div class="x-window-header x-unselectable x-window-draggable" id="ext-gen95" style="-moz-user-select: none;"><div class="x-tool x-tool-close" id="ext-gen101"> </div><div class="x-tool x-tool-toggle" id="ext-gen100"> </div><span class="x-window-header-text" id="ext-gen105">Настройки панели</span></div></div></div></div><div class="x-window-bwrap" id="ext-gen96"><div class="x-window-ml"><div class="x-window-mr"><div class="x-window-mc" id="ext-gen99"><div class="x-window-body prbWithMargin dashContainer" id="ext-gen97" style="width: 512px; height: 1px;"><div id="BaseMainContent_MainContent_DashboardSettingsUc_Dashboardpnl" class=" x-panel x-panel-noborder x-form-label-left"><div class="x-panel-bwrap" id="ext-gen107"><div id="ext-gen94" method="POST" class="x-panel-body x-panel-body-noheader x-panel-body-noborder x-form"><div class="" id="BaseMainContent_MainContent_DashboardSettingsUc_Dashboardpnl_Content">
+           <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_PanelVisChk_Container">
+	
+
+
+<div class="x-form-check-wrap" id="ext-gen124"><input type="checkbox" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_PanelVisChk" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_PanelVisChk" autocomplete="off" class=" x-form-checkbox x-form-field" value="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_PanelVisChk" /><label class="x-form-cb-label dashLabel" for="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_PanelVisChk" id="ext-gen125">Панель</label></div></div>
+         
+
+<div class="dashDetails">          
+         
+              <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ColumnCount_Container">
+	
+
+
+<div style="" class="x-form-item  x-form-label-left" id="ext-gen130"><label style="width:100px;" class="x-form-item-label" id="ext-gen131">Количество колонок:</label><div style="padding-left: 105px; width: 79px;" class="x-form-element" id="ext-gen129"><div class="x-form-field-wrap x-form-field-trigger-wrap" id="ext-gen126" style="width: 79px;"><input type="hidden" id="ext-gen128" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ColumnCount_Value" value="1" /><input type="text" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ColumnCount" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ColumnCount" autocomplete="off" size="24" class="x-form-text x-form-field" style="width: 46px;" /><img class="x-form-trigger x-form-arrow-trigger" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" id="ext-gen127" /><input type="hidden" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ColumnCount_SelIndex" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_ColumnCount_SelIndex" autocomplete="off" size="20" class=" x-form-hidden x-form-field" value="0" /></div></div></div></div>
+           
+
+         <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_pnlIndx_Container">
+
+<input type="hidden" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_pnlIndx" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_pnlIndx" autocomplete="off" size="20" class=" x-form-hidden x-form-field" /></div>
+            
+              <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_txtPanelTitle_Container" class=" dashName">
+	
+
+
+<div style="" class="x-form-item  x-form-label-left" id="ext-gen133"><label style="width:100px;" class="x-form-item-label" id="ext-gen134">Имя панели:</label><div style="padding-left: 105px; width: 158px;" class="x-form-element" id="ext-gen132"><input type="text" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_txtPanelTitle" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel1_txtPanelTitle" autocomplete="off" size="20" class=" x-form-text x-form-field" style="width: 150px;" /></div></div></div>
+
+<div class="clearboth"> </div>
+</div>
+
+ 
+
+          
+          
+
+
+           <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_PanelVisChk_Container">
+	
+
+
+<div class="x-form-check-wrap" id="ext-gen135"><input type="checkbox" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_PanelVisChk" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_PanelVisChk" autocomplete="off" class=" x-form-checkbox x-form-field" value="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_PanelVisChk" /><label class="x-form-cb-label dashLabel" for="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_PanelVisChk" id="ext-gen136">Панель</label></div></div>
+         
+
+<div class="dashDetails">          
+         
+              <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ColumnCount_Container">
+	
+
+
+<div style="" class="x-form-item  x-form-label-left" id="ext-gen141"><label style="width:100px;" class="x-form-item-label" id="ext-gen142">Количество колонок:</label><div style="padding-left: 105px; width: 79px;" class="x-form-element" id="ext-gen140"><div class="x-form-field-wrap x-form-field-trigger-wrap" id="ext-gen137" style="width: 79px;"><input type="hidden" id="ext-gen139" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ColumnCount_Value" value="1" /><input type="text" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ColumnCount" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ColumnCount" autocomplete="off" size="24" class="x-form-text x-form-field" style="width: 46px;" /><img class="x-form-trigger x-form-arrow-trigger" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" id="ext-gen138" /><input type="hidden" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ColumnCount_SelIndex" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_ColumnCount_SelIndex" autocomplete="off" size="20" class=" x-form-hidden x-form-field" value="0" /></div></div></div></div>
+           
+
+         <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_pnlIndx_Container">
+
+<input type="hidden" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_pnlIndx" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_pnlIndx" autocomplete="off" size="20" class=" x-form-hidden x-form-field" /></div>
+            
+              <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_txtPanelTitle_Container" class=" dashName">
+	
+
+
+<div style="" class="x-form-item  x-form-label-left" id="ext-gen144"><label style="width:100px;" class="x-form-item-label" id="ext-gen145">Имя панели:</label><div style="padding-left: 105px; width: 158px;" class="x-form-element" id="ext-gen143"><input type="text" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_txtPanelTitle" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel2_txtPanelTitle" autocomplete="off" size="20" class=" x-form-text x-form-field" style="width: 150px;" /></div></div></div>
+
+<div class="clearboth"> </div>
+</div>
+
+ 
+
+          
+          
+
+
+            <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_PanelVisChk_Container">
+	
+
+
+<div class="x-form-check-wrap" id="ext-gen146"><input type="checkbox" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_PanelVisChk" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_PanelVisChk" autocomplete="off" class=" x-form-checkbox x-form-field" value="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_PanelVisChk" /><label class="x-form-cb-label dashLabel" for="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_PanelVisChk" id="ext-gen147">Панель</label></div></div>
+         
+
+<div class="dashDetails">          
+         
+              <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ColumnCount_Container">
+	
+
+
+<div style="" class="x-form-item  x-form-label-left" id="ext-gen152"><label style="width:100px;" class="x-form-item-label" id="ext-gen153">Количество колонок:</label><div style="padding-left: 105px; width: 79px;" class="x-form-element" id="ext-gen151"><div class="x-form-field-wrap x-form-field-trigger-wrap" id="ext-gen148" style="width: 79px;"><input type="hidden" id="ext-gen150" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ColumnCount_Value" value="1" /><input type="text" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ColumnCount" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ColumnCount" autocomplete="off" size="24" class="x-form-text x-form-field" style="width: 46px;" /><img class="x-form-trigger x-form-arrow-trigger" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" id="ext-gen149" /><input type="hidden" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ColumnCount_SelIndex" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_ColumnCount_SelIndex" autocomplete="off" size="20" class=" x-form-hidden x-form-field" value="0" /></div></div></div></div>
+           
+
+         <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_pnlIndx_Container">
+
+<input type="hidden" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_pnlIndx" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_pnlIndx" autocomplete="off" size="20" class=" x-form-hidden x-form-field" /></div>
+            
+              <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_txtPanelTitle_Container" class=" dashName">
+	
+
+
+<div style="" class="x-form-item  x-form-label-left" id="ext-gen155"><label style="width:100px;" class="x-form-item-label" id="ext-gen156">Имя панели:</label><div style="padding-left: 105px; width: 158px;" class="x-form-element" id="ext-gen154"><input type="text" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_txtPanelTitle" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel3_txtPanelTitle" autocomplete="off" size="20" class=" x-form-text x-form-field" style="width: 150px;" /></div></div></div>
+
+<div class="clearboth"> </div>
+</div>
+
+ 
+
+          
+          
+
+
+            <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_PanelVisChk_Container">
+	
+
+
+<div class="x-form-check-wrap" id="ext-gen157"><input type="checkbox" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_PanelVisChk" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_PanelVisChk" autocomplete="off" class=" x-form-checkbox x-form-field" value="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_PanelVisChk" /><label class="x-form-cb-label dashLabel" for="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_PanelVisChk" id="ext-gen158">Панель</label></div></div>
+         
+
+<div class="dashDetails">          
+         
+              <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ColumnCount_Container">
+	
+
+
+<div style="" class="x-form-item  x-form-label-left" id="ext-gen163"><label style="width:100px;" class="x-form-item-label" id="ext-gen164">Количество колонок:</label><div style="padding-left: 105px; width: 79px;" class="x-form-element" id="ext-gen162"><div class="x-form-field-wrap x-form-field-trigger-wrap" id="ext-gen159" style="width: 79px;"><input type="hidden" id="ext-gen161" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ColumnCount_Value" value="1" /><input type="text" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ColumnCount" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ColumnCount" autocomplete="off" size="24" class="x-form-text x-form-field" style="width: 46px;" /><img class="x-form-trigger x-form-arrow-trigger" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" id="ext-gen160" /><input type="hidden" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ColumnCount_SelIndex" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_ColumnCount_SelIndex" autocomplete="off" size="20" class=" x-form-hidden x-form-field" value="0" /></div></div></div></div>
+           
+
+         <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_pnlIndx_Container">
+
+<input type="hidden" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_pnlIndx" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_pnlIndx" autocomplete="off" size="20" class=" x-form-hidden x-form-field" /></div>
+            
+              <div style="display:inline;" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_txtPanelTitle_Container" class=" dashName">
+	
+
+
+<div style="" class="x-form-item  x-form-label-left" id="ext-gen166"><label style="width:100px;" class="x-form-item-label" id="ext-gen167">Имя панели:</label><div style="padding-left: 105px; width: 158px;" class="x-form-element" id="ext-gen165"><input type="text" name="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_txtPanelTitle" id="BaseMainContent_MainContent_DashboardSettingsUc_DashboardPanel4_txtPanelTitle" autocomplete="off" size="20" class=" x-form-text x-form-field" style="width: 150px;" /></div></div></div>
+
+<div class="clearboth"> </div>
+</div>
+
+ 
+
+          
+          
+
+
+            
+            
+            
+            </div></div><div class="x-panel-footer x-panel-footer-noborder x-panel-btns" id="ext-gen108"><div class="x-panel-fbar x-small-editor x-toolbar-layout-ct" id="ext-comp-1003"><table cellspacing="0" class="x-toolbar-ct"><tbody><tr><td align="left" class="x-toolbar-left"><table cellspacing="0"><tbody><tr class="x-toolbar-left-row"></tr></tbody></table></td><td align="right" class="x-toolbar-right"><table cellspacing="0" class="x-toolbar-right-ct"><tbody><tr><td><table cellspacing="0"><tbody><tr class="x-toolbar-right-row"><td class="x-toolbar-cell" id="ext-gen112"><table cellspacing="0" class="x-btn  x-btn-text-icon" id="BaseMainContent_MainContent_DashboardSettingsUc_SubmitBtn" style="width: auto;"><tbody class="x-btn-small x-btn-icon-small-left"><tr><td class="x-btn-tl"><i> </i></td><td class="x-btn-tc"></td><td class="x-btn-tr"><i> </i></td></tr><tr><td class="x-btn-ml"><i> </i></td><td class="x-btn-mc"><em unselectable="on" class=""><button type="button" id="ext-gen113" class=" x-btn-text icon-accept">Сохранить</button></em></td><td class="x-btn-mr"><i> </i></td></tr><tr><td class="x-btn-bl"><i> </i></td><td class="x-btn-bc"></td><td class="x-btn-br"><i> </i></td></tr></tbody></table></td><td class="x-toolbar-cell" id="ext-gen114"><table cellspacing="0" class="x-btn  x-btn-noicon" id="BaseMainContent_MainContent_DashboardSettingsUc_CancelBtn" style="width: auto;"><tbody class="x-btn-small x-btn-icon-small-left"><tr><td class="x-btn-tl"><i> </i></td><td class="x-btn-tc"></td><td class="x-btn-tr"><i> </i></td></tr><tr><td class="x-btn-ml"><i> </i></td><td class="x-btn-mc"><em unselectable="on" class=""><button type="button" id="ext-gen115" class=" x-btn-text">Отменить</button></em></td><td class="x-btn-mr"><i> </i></td></tr><tr><td class="x-btn-bl"><i> </i></td><td class="x-btn-bc"></td><td class="x-btn-br"><i> </i></td></tr></tbody></table></td></tr></tbody></table></td><td><table cellspacing="0"><tbody><tr class="x-toolbar-extras-row"></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div><div class="x-clear" id="ext-gen110"></div></div></div></div></div></div></div></div><div class="x-window-bl x-panel-nofooter" id="ext-gen98"><div class="x-window-br"><div class="x-window-bc"></div></div></div></div><a tabindex="-1" class="x-dlg-focus" href="#" id="ext-gen102"> </a><div class="x-resizable-handle x-resizable-handle-north x-unselectable x-window-handle" id="ext-gen116" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-south x-unselectable x-window-handle" id="ext-gen117" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-east x-unselectable x-window-handle" id="ext-gen118" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-west x-unselectable x-window-handle" id="ext-gen119" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-northeast x-unselectable x-window-handle" id="ext-gen120" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-northwest x-unselectable x-window-handle" id="ext-gen121" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-southeast x-unselectable x-window-handle" id="ext-gen122" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-southwest x-unselectable x-window-handle" id="ext-gen123" style="-moz-user-select: none;"></div></div><div class="x-window-proxy" id="ext-gen198"></div><div class="ext-el-mask" id="ext-gen199" style="display: none;"></div><div id="BaseMainContent_AddressWindowContent_PopupWndAddress" class=" x-window x-resizable-pinned" style="position: absolute; z-index: 11000; visibility: hidden; left: -10000px; top: -10000px; width: 555px;"><div class="x-window-tl"><div class="x-window-tr"><div class="x-window-tc"><div class="x-window-header x-unselectable x-window-draggable" id="ext-gen190" style="-moz-user-select: none;"><div class="x-tool x-tool-close" id="ext-gen196"> </div><div class="x-tool x-tool-toggle" id="ext-gen195"> </div><span class="x-window-header-text"></span></div></div></div></div><div class="x-window-bwrap" id="ext-gen191"><div class="x-window-ml"><div class="x-window-mr"><div class="x-window-mc" id="ext-gen194"><div class="x-window-body profFooter narProfButton prbWithMargin" id="ext-gen192" style="width: 465px; height: 332px;"><div id="BaseMainContent_AddressWindowContent_AddressFpnl" class=" x-panel x-panel-noborder x-form-label-left"><div class="x-panel-bwrap" id="ext-gen201"><div id="ext-gen189" method="POST" class="x-panel-body x-panel-body-noheader x-panel-body-noborder x-form"><input type="hidden" name="BaseMainContent_AddressWindowContent_UIDHdn" id="BaseMainContent_AddressWindowContent_UIDHdn" autocomplete="off" size="20" class=" x-form-hidden x-form-field" /><input type="hidden" name="BaseMainContent_AddressWindowContent_AddressIdHdn" id="BaseMainContent_AddressWindowContent_AddressIdHdn" autocomplete="off" size="20" class=" x-form-hidden x-form-field" /><div tabindex="-1" class="x-form-item " id="ext-gen210"><label class="x-form-item-label" style="width:110px;" for="BaseMainContent_AddressWindowContent_CountryCmb" id="ext-gen211">Страна <span style="color:red;">*</span>:</label><div style="padding-left:115px" id="x-form-el-BaseMainContent_AddressWindowContent_ctl02" class="x-form-element"><div id="ext-comp-1004" class=" x-form-composite x-box-layout-ct x-form-field" style="width: 350px;"><div class="x-box-inner windowSelect" id="ext-gen213" style="width: 335px; height: 25px;"><div class="x-form-field-wrap x-form-field-trigger-wrap x-box-item" id="ext-gen214" style="width: 330px; left: 0px; top: 0px;"><input type="hidden" id="ext-gen216" name="BaseMainContent_AddressWindowContent_CountryCmb_Value" value="Российская Федерация" /><input type="text" name="BaseMainContent_AddressWindowContent_CountryCmb" id="BaseMainContent_AddressWindowContent_CountryCmb" autocomplete="off" size="24" class="x-form-text x-form-field" style="width: 297px;" /><img class="x-form-trigger x-form-arrow-trigger" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" id="ext-gen215" /><input type="hidden" name="BaseMainContent_AddressWindowContent_CountryCmb_SelIndex" id="BaseMainContent_AddressWindowContent_CountryCmb_SelIndex" autocomplete="off" size="20" class=" x-form-hidden x-form-field" value="-1" /></div></div></div></div><div class="x-form-clear-left"></div></div><div tabindex="-1" class="x-form-item " id="ext-gen217"><label class="x-form-item-label" style="width:110px;" for="BaseMainContent_AddressWindowContent_RegionCmb" id="ext-gen218">Регион:</label><div style="padding-left:115px" id="x-form-el-BaseMainContent_AddressWindowContent_ctl06" class="x-form-element"><div id="ext-comp-1005" class=" x-form-composite x-box-layout-ct x-form-field" style="width: 350px;"><div class="x-box-inner windowSelect" id="ext-gen220" style="width: 335px; height: 25px;"><div class="x-form-field-wrap x-form-field-trigger-wrap x-box-item" id="ext-gen221" style="width: 330px; left: 0px; top: 0px;"><input type="hidden" id="ext-gen223" name="BaseMainContent_AddressWindowContent_RegionCmb_Value" value="" /><input type="text" name="BaseMainContent_AddressWindowContent_RegionCmb" id="BaseMainContent_AddressWindowContent_RegionCmb" autocomplete="off" size="24" class="x-form-text x-form-field x-form-empty-field" style="width: 297px;" /><img class="x-form-trigger x-form-arrow-trigger" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" id="ext-gen222" /><input type="hidden" name="BaseMainContent_AddressWindowContent_RegionCmb_SelIndex" id="BaseMainContent_AddressWindowContent_RegionCmb_SelIndex" autocomplete="off" size="20" class=" x-form-hidden x-form-field" /></div></div></div></div><div class="x-form-clear-left"></div></div><div tabindex="-1" class="x-form-item " id="ext-gen224"><label class="x-form-item-label" style="width:110px;" for="BaseMainContent_AddressWindowContent_DistrictCmb" id="ext-gen225">Район:</label><div style="padding-left:115px" id="x-form-el-BaseMainContent_AddressWindowContent_ctl10" class="x-form-element"><div id="ext-comp-1006" class=" x-form-composite x-box-layout-ct x-form-field" style="width: 350px;"><div class="x-box-inner windowSelect" id="ext-gen227" style="width: 335px; height: 25px;"><div class="x-form-field-wrap x-form-field-trigger-wrap x-box-item" id="ext-gen228" style="width: 330px; left: 0px; top: 0px;"><input type="hidden" id="ext-gen230" name="BaseMainContent_AddressWindowContent_DistrictCmb_Value" value="" /><input type="text" name="BaseMainContent_AddressWindowContent_DistrictCmb" id="BaseMainContent_AddressWindowContent_DistrictCmb" autocomplete="off" size="24" class="x-form-text x-form-field x-form-empty-field" style="width: 297px;" /><img class="x-form-trigger x-form-arrow-trigger" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" id="ext-gen229" /><input type="hidden" name="BaseMainContent_AddressWindowContent_DistrictCmb_SelIndex" id="BaseMainContent_AddressWindowContent_DistrictCmb_SelIndex" autocomplete="off" size="20" class=" x-form-hidden x-form-field" /></div></div></div></div><div class="x-form-clear-left"></div></div><div tabindex="-1" class="x-form-item " id="ext-gen231"><label class="x-form-item-label" style="width:110px;" for="BaseMainContent_AddressWindowContent_CityCmb" id="ext-gen232">Нас. пункт <span style="color:red;">*</span>:</label><div style="padding-left:115px" id="x-form-el-BaseMainContent_AddressWindowContent_ctl14" class="x-form-element"><div id="ext-comp-1007" class=" x-form-composite x-box-layout-ct x-form-field" style="width: 350px;"><div class="x-box-inner windowSelect noTrigger" id="ext-gen234" style="width: 335px; height: 25px;"><div class="x-form-field-wrap x-form-field-trigger-wrap x-box-item" id="ext-gen235" style="width: 330px; left: 0px; top: 0px;"><input type="hidden" id="ext-gen237" name="BaseMainContent_AddressWindowContent_CityCmb_Value" value="" /><input type="text" name="BaseMainContent_AddressWindowContent_CityCmb" id="BaseMainContent_AddressWindowContent_CityCmb" autocomplete="off" size="24" class="x-form-text x-form-field x-form-empty-field" style="width: 322px;" /><img class="x-form-trigger x-form-arrow-trigger" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" id="ext-gen236" style="display: none;" /><input type="hidden" name="BaseMainContent_AddressWindowContent_CityCmb_SelIndex" id="BaseMainContent_AddressWindowContent_CityCmb_SelIndex" autocomplete="off" size="20" class=" x-form-hidden x-form-field" /></div></div></div></div><div class="x-form-clear-left"></div></div><div tabindex="-1" class="x-form-item " id="ext-gen238"><label class="x-form-item-label" style="width:110px;" for="BaseMainContent_AddressWindowContent_StreetTxt" id="ext-gen239">Улица:</label><div style="padding-left:115px" id="x-form-el-BaseMainContent_AddressWindowContent_ctl18" class="x-form-element"><div id="ext-comp-1008" class=" x-form-composite x-box-layout-ct x-form-field" style="width: 350px;"><div class="x-box-inner" id="ext-gen241" style="width: 335px; height: 25px;"><input type="text" name="BaseMainContent_AddressWindowContent_StreetTxt" id="BaseMainContent_AddressWindowContent_StreetTxt" autocomplete="off" size="20" class=" x-form-text x-form-field x-box-item" style="width: 322px; left: 0px; top: 0px;" /></div></div></div><div class="x-form-clear-left"></div></div><div tabindex="-1" class="x-form-item " id="ext-gen242"><label class="x-form-item-label" style="width:110px;" for="BaseMainContent_AddressWindowContent_BlockTxt" id="ext-gen243">Дом:</label><div style="padding-left:115px" id="x-form-el-BaseMainContent_AddressWindowContent_ctl22" class="x-form-element"><div id="ext-comp-1009" class=" x-form-composite x-box-layout-ct x-form-field" style="width: 350px;"><div class="x-box-inner" id="ext-gen245" style="width: 335px; height: 25px;"><input type="text" name="BaseMainContent_AddressWindowContent_BlockTxt" id="BaseMainContent_AddressWindowContent_BlockTxt" autocomplete="off" size="20" class=" x-form-text x-form-field x-box-item" style="width: 322px; left: 0px; top: 0px;" /></div></div></div><div class="x-form-clear-left"></div></div><div tabindex="-1" class="x-form-item " id="ext-gen246"><label class="x-form-item-label" style="width:110px;" for="BaseMainContent_AddressWindowContent_BuildingTxt" id="ext-gen247">Строение:</label><div style="padding-left:115px" id="x-form-el-BaseMainContent_AddressWindowContent_ctl26" class="x-form-element"><div id="ext-comp-1010" class=" x-form-composite x-box-layout-ct x-form-field" style="width: 350px;"><div class="x-box-inner" id="ext-gen249" style="width: 335px; height: 25px;"><input type="text" name="BaseMainContent_AddressWindowContent_BuildingTxt" id="BaseMainContent_AddressWindowContent_BuildingTxt" autocomplete="off" size="20" class=" x-form-text x-form-field x-box-item" style="width: 322px; left: 0px; top: 0px;" /></div></div></div><div class="x-form-clear-left"></div></div><div tabindex="-1" class="x-form-item " id="ext-gen250"><label class="x-form-item-label" style="width:110px;" for="BaseMainContent_AddressWindowContent_AdditionalInfoTxt" id="ext-gen251">Доп. информация:</label><div style="padding-left:115px" id="x-form-el-BaseMainContent_AddressWindowContent_ctl34" class="x-form-element"><div id="ext-comp-1011" class=" x-form-composite x-box-layout-ct x-form-field" style="width: 350px;"><div class="x-box-inner" id="ext-gen253" style="width: 335px; height: 62px;"><textarea name="BaseMainContent_AddressWindowContent_AdditionalInfoTxt" id="BaseMainContent_AddressWindowContent_AdditionalInfoTxt" autocomplete="off" style="width: 322px; height: 60px; left: 0px; top: 0px;" class=" x-form-textarea x-form-field x-box-item"></textarea></div></div></div><div class="x-form-clear-left"></div></div></div><div class="x-panel-footer x-panel-footer-noborder x-panel-btns" id="ext-gen202"><div class="x-panel-fbar x-small-editor x-toolbar-layout-ct" id="ext-comp-1012"><table cellspacing="0" class="x-toolbar-ct"><tbody><tr><td align="left" class="x-toolbar-left"><table cellspacing="0"><tbody><tr class="x-toolbar-left-row"></tr></tbody></table></td><td align="right" class="x-toolbar-right"><table cellspacing="0" class="x-toolbar-right-ct"><tbody><tr><td><table cellspacing="0"><tbody><tr class="x-toolbar-right-row"><td class="x-toolbar-cell" id="ext-gen206"><table cellspacing="0" class="x-btn  x-btn-noicon" id="BaseMainContent_AddressWindowContent_SubmitBtn" style="width: auto;"><tbody class="x-btn-small x-btn-icon-small-left"><tr><td class="x-btn-tl"><i> </i></td><td class="x-btn-tc"></td><td class="x-btn-tr"><i> </i></td></tr><tr><td class="x-btn-ml"><i> </i></td><td class="x-btn-mc"><em unselectable="on" class=""><button type="button" id="ext-gen207" class=" x-btn-text">Сохранить</button></em></td><td class="x-btn-mr"><i> </i></td></tr><tr><td class="x-btn-bl"><i> </i></td><td class="x-btn-bc"></td><td class="x-btn-br"><i> </i></td></tr></tbody></table></td><td class="x-toolbar-cell" id="ext-gen208"><table cellspacing="0" class="x-btn  x-btn-noicon" id="BaseMainContent_AddressWindowContent_CancelBtn" style="width: auto;"><tbody class="x-btn-small x-btn-icon-small-left"><tr><td class="x-btn-tl"><i> </i></td><td class="x-btn-tc"></td><td class="x-btn-tr"><i> </i></td></tr><tr><td class="x-btn-ml"><i> </i></td><td class="x-btn-mc"><em unselectable="on" class=""><button type="button" id="ext-gen209" class=" x-btn-text">Отменить</button></em></td><td class="x-btn-mr"><i> </i></td></tr><tr><td class="x-btn-bl"><i> </i></td><td class="x-btn-bc"></td><td class="x-btn-br"><i> </i></td></tr></tbody></table></td></tr></tbody></table></td><td><table cellspacing="0"><tbody><tr class="x-toolbar-extras-row"></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div><div class="x-clear" id="ext-gen204"></div></div></div></div></div></div></div></div><div class="x-window-bl x-panel-nofooter" id="ext-gen193"><div class="x-window-br"><div class="x-window-bc"></div></div></div></div><a tabindex="-1" class="x-dlg-focus" href="#" id="ext-gen197"> </a><div class="x-resizable-handle x-resizable-handle-north x-unselectable x-window-handle" id="ext-gen254" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-south x-unselectable x-window-handle" id="ext-gen255" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-east x-unselectable x-window-handle" id="ext-gen256" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-west x-unselectable x-window-handle" id="ext-gen257" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-northeast x-unselectable x-window-handle" id="ext-gen258" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-northwest x-unselectable x-window-handle" id="ext-gen259" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-southeast x-unselectable x-window-handle" id="ext-gen260" style="-moz-user-select: none;"></div><div class="x-resizable-handle x-resizable-handle-southwest x-unselectable x-window-handle" id="ext-gen261" style="-moz-user-select: none;"></div></div><span style="display: none ! important;"><input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" /></span><span style="display: none ! important;"><input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" /></span><span style="display: none ! important;"><input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" /></span><span style="display: none ! important;"><input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="29C6FD49" /></span><span style="display: none ! important;"><input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="IJa+N9YVMCNNU21ETgvf/jTBksIWdIbl3VLx+NUM6GC6crcpZRPTDs04rBwPkVGIQwDXsJ3vIh4Q8p+SZdrw3KJMOLgqLMgcH2aQoZ+Sa4TDlSioo5fu3zoKDXzHLRGn4BfipYXtTY7FZN1IjrBxIctKKWdYtVfKbViH2AK0q/LisK7IyUC++JsuJOVCejZ5DddSrfIYvSyP9aG9VXKte/qP/zvXPu/so1wmze4quGKGsii/z1XMKHRz3XCknavrsPyo2Q==" /></span><span style="display: none ! important;"><input type="hidden" name="BaseMainContent_tree_ExpandState" id="BaseMainContent_tree_ExpandState" value="ennennennennn" /></span><span style="display: none ! important;"><input type="hidden" name="BaseMainContent_tree_SelectedNode" id="BaseMainContent_tree_SelectedNode" value="" /></span><span style="display: none ! important;"><input type="hidden" name="BaseMainContent_tree_PopulateLog" id="BaseMainContent_tree_PopulateLog" value="" /></span></form>
+   
+
+
+    </div>
+
+<script type="text/javascript">
+    if ($isNotIframe) $("body").addClass("mainBody");
+
+    var handleError = function (response, result, control, eventType, methodName, extraparams, event) {
+        var msg = result.errorMessage;
+        if (msg.indexOf("BADRESPONSE:") &lt; 0 &amp;&amp; msg != 'Internal Server Error' &amp;&amp; msg != 'NORESPONSE')
+            Ext.Msg.alert('Ошибка', msg);
+        window.status = result.errorMessage;
+    }
+
+    Ext.data.Connection.override({
+        timeout: 120000
+    });
+    Ext.Ajax.timeout = 120000;
+
+    
+        Ext.override(Ext.form.TimeField, {
+
+            // cap the number of items in the drop down menu
+            maxMenuItems: 1440,
+
+            // private
+            initComponent: function () {
+                Ext.form.TimeField.superclass.initComponent.call(this);
+
+                if (typeof this.minValue == "string") {
+                    this.minValue = this.parseDate(this.minValue);
+                }
+                if (typeof this.maxValue == "string") {
+                    this.maxValue = this.parseDate(this.maxValue);
+                }
+
+                if (!this.store) {
+                    var min = this.parseDate(this.minValue);
+                    if (!min) {
+                        min = new Date().clearTime();
+                    }
+                    var max = this.parseDate(this.maxValue);
+                    if (!max) {
+                        max = new Date().clearTime().add('mi', (24 * 60) - 1);
+                    }
+                    var times = [];
+                    var maxItems = this.maxMenuItems/this.increment;
+                    while (min &lt;= max &amp;&amp; --maxItems &gt;= 0) {
+                        times.push([min.dateFormat(this.format)]);
+                        min = min.add('mi', this.increment);
+                    }
+                    this.store = new Ext.data.SimpleStore({
+                        fields: ['text'],
+                        data: times
+                    });
+                    this.displayField = 'text';
+                }
+            }
+        });
+
+</script>
+
+
+
+<div id="ext-comp-1001" class="x-tip" style="position: absolute; z-index: 20002; visibility: hidden; display: none;"><div class="x-tip-tl"><div class="x-tip-tr"><div class="x-tip-tc"><div class="x-tip-header x-unselectable" id="ext-gen5" style="-moz-user-select: none;"><span class="x-tip-header-text"></span></div></div></div></div><div class="x-tip-bwrap" id="ext-gen6"><div class="x-tip-ml"><div class="x-tip-mr"><div class="x-tip-mc" id="ext-gen9"><div class="x-tip-body" id="ext-gen7" style="height: auto;"></div></div></div></div><div class="x-tip-bl x-panel-nofooter" id="ext-gen8"><div class="x-tip-br"><div class="x-tip-bc"></div></div></div></div><div class="x-tip-anchor x-tip-anchor-top" id="ext-gen10" style="z-index: 20003;"></div></div><div id="ext-gen23" style="-moz-user-select: none;" class=" x-unselectable x-splitbar-proxy x-splitbar-proxy-h"></div><div id="BaseMainContent_MainContent_DashboardSettingsUc_PopupWndDashboard-rzproxy" class="x-resizable-proxy x-unselectable" style="-moz-user-select: none;"></div><div id="BaseMainContent_MainContent_DashboardPortal0Column0-rzproxy" class="x-resizable-proxy x-unselectable" style="-moz-user-select: none;"></div><div id="BaseMainContent_MainContent_DashboardPortal0Column1-rzproxy" class="x-resizable-proxy x-unselectable" style="-moz-user-select: none;"></div><div id="BaseMainContent_AddressWindowContent_PopupWndAddress-rzproxy" class="x-resizable-proxy x-unselectable" style="-moz-user-select: none;"></div></body></html>
